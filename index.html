@@ -14,8 +14,8 @@
   
   <script> 
       $(function(){
-          $('#intro-3').hide()
-          $('#intro-1').hide()
+        //   $('#intro-3').hide()
+        //   $('#intro-1').hide()
       });
   </script>
 </head>
@@ -24,7 +24,9 @@
         <div id='heading' class="text-vertical-center">
             <h1>Welcome to US History</h1>
             <a href='#APReview'><button type="button" class="btn btn-success btn-lg">AP Review</button></a>
-            <a href='#regent'><button type="button" class="btn btn-success btn-lg">Regents Review</button></a>
+            <a href='#regent'><button type="button" class="btn btn-success btn-lg">Regents Review</button></a><br><br>
+            <button type="button" class="btn logButton" id='login'>Login</button><br><br>
+            <button type="button" class="btn logButton" id='signUp'>Sign Up</button>
         </div>
     </header>
     
@@ -38,7 +40,7 @@
     </header>
     
     <header id="intro-3">
-      <div class="text-vertical-center" id="regent">
+      <div id="regent">
         <h3>US History Regents Review</h3>
         <h4>Everything you need to know to ACE your regents.</h4>
       </div>

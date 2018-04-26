@@ -23,9 +23,23 @@ h2 {
   font-size: 20px;
 }
 
+button{
+  transition-duration: 1.2s;
+}
+
 .text-vertical-center {
   text-align: center;
   vertical-align: middle;
   display: table-cell;
   color: white;
+}
+
+.logButton{
+  background-color: transparent;
+  border: black;
+}
+
+.logButton:hover{
+  background-color: lightgrey;
+  border-color: white;
 }
