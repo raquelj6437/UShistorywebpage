@@ -1,37 +1,97 @@
 <!DOCTYPE html>
+<!--images-->
+<!--http://moodle.nisdtx.org/pluginfile.php/966641/course/section/106961/8228977_orig.jpg-->
 <html lang="en">
+
 <head>
-  <title>US History</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="custom.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  
-  <script> 
-      $(function(){
-          
-      });
-  </script>
+    <title>US History</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            $('#intro-3').hide()
+            $('#intro-1').hide()
+        });
+    </script>
 </head>
+
 <body>
+
     <div id='heading'>
         <h1>Welcome to US History</h1>
         <button>AP Review</button>
         <button>Regent Review</button>
     </div>
-    
-    <div id='APReview'>
-        
-    </div>
-        <header id="">
-      <div class="text-vertical-center" id="regent">
-        <h3>US History Regents Review</h3>
-        <h4>Everything you need to know to ACE your regents.</h4>
-      </div>
+
+    <header id='intro-1'>
+        <div id='heading' class="text-vertical-center">
+            <h1>Welcome to US History</h1>
+            <a href='#APReview'><button type="button" class="btn btn-success btn-lg">AP Review</button></a>
+            <a href='#regent'><button type="button" class="btn btn-success btn-lg">Regents Review</button></a><br><br>
+            <button type="button" class="btn logButton" id='login'>Login</button><br><br>
+            <button type="button" class="btn logButton" id='signUp'>Sign Up</button>
+        </div>
     </header>
-    </div>
+
+    <header id='intro-2'>
+        <div id='APReview'>
+            <h3>AP US History Review</h3>
+            <h4>Everything you need to know to ACE your AP exam.</h4>
+            <p>Timeline</p>
+
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2>2017</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2015</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2012</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2011</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2007</h2>
+                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header id="intro-3">
+        <div id="regent">
+            <h3>US History Regents Review</h3>
+            <h4>Everything you need to know to ACE your regents.</h4>
+        </div>
+    </header>
 </body>
+
 </html>
