@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <header id='intro-2' class='container'>
+    <header id='intro-2' class=''>
         <div id='APReview'>
             <h3>AP US History Review</h3>
             <h4>Everything you need to know to ACE your AP exam.</h4>
@@ -122,6 +122,19 @@
         var auth = firebase.auth();
         auth.onAuthStateChanged(newLogin);
     }
+    
+    function app(user){
+        //user.displayName
+        //user.email
+        //user.photoURL
+        //user.iud
+        console.log(user.displayName)
+        alert('You are logged in!')
+    }
+    
+    $("#googlelogin").click(function(){
+        login()
+    });
 </script>
 
 </html>
