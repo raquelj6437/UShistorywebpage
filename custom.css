@@ -29,8 +29,7 @@ h2 {
 
 button{
   transition-duration: 1.2s;
-  background-color: #aa6c3f;
-  color:white;
+  background-color: light-grey;
 }
 
 .text-vertical-center {
