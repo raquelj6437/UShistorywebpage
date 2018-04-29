@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <script>
         $(function() {
@@ -60,12 +61,45 @@
     </header>
     
     <div id='loginPage'>
-        
+        <input type="text" name="Username" placeholder='Username'/>
+        <input type="text" name="Password" placeholder='Password'/>
+        <button id='googlelogin'>Sign in with google</button>
     </div>
     
     <div id='signUpPage'>
         
     </div>
 </body>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyD2DtL08N6-HfYbUA42CgaB_selDghvkyo",
+        authDomain: "us-history-1524785849679.firebaseapp.com",
+        databaseURL: "https://us-history-1524785849679.firebaseio.com",
+        projectId: "us-history-1524785849679",
+        storageBucket: "us-history-1524785849679.appspot.com",
+        messagingSenderId: "746157019230"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script>
+    function login() {
+        function newLogin(user) {
+            if (user) {
+                app(user);
+            }
+            else {
+                var provider = new firebase.auth.GoogleAuthProvider();
+                firebase.auth().signInWithRedirect(provider);
+            }
+        }
+        var auth = firebase.auth();
+        auth.onAuthStateChanged(newLogin);
+    }
+</script>
 
 </html>

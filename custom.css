@@ -55,6 +55,7 @@ body {
   margin: 0 auto;
 }
 
+/*DO NOT TOUCH TIMELINE CSS!!!*/
 .vl {
   border-left: 2px solid grey;
   height: 400px;
@@ -101,7 +102,7 @@ body {
 }
 
 #timeline{
-  width: 110px;
+  width: 130px;
   height: 450px;
   background-color: rgb(77, 166, 255);
   display: relative;
