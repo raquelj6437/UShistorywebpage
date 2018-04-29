@@ -118,7 +118,6 @@ body {
   width: 130px;
   height: 450px;
   display: relative;
-  position: inherit;
   z-index: -1;
   overflow: scroll;
 }
