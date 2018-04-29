@@ -19,7 +19,7 @@ html, body {
   color:white;
 }
 
-#APReview{
+#APReview, #regent{
   position: relative;
   left: 5%;
   right: 5%;

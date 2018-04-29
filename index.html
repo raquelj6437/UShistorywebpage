@@ -31,8 +31,8 @@
             <h1>Welcome to US History</h1>
             <a href='#APReview'><button type="button" class=" btn btn-lg">AP Review</button></a>
             <a href='#regent'><button type="button" class="btn btn-lg">Regents Review</button></a><br><br>
-            <button type="button" class="btn logButton" id='login'>Login</button><br><br>
-            <button type="button" class="btn logButton" id='signUp'>Sign Up</button>
+            <a href='#loginPage'><button type="button" class="btn logButton" id='login'>Login</button><br><br></a>
+            <a href='#signUpPage'><button type="button" class="btn logButton" id='signUp'>Sign Up</button></a>
         </div>
     </header>
 
@@ -51,6 +51,18 @@
                     <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 2" class="img-circle">
                     <p class="centered">Period 2</p>
                 </div>
+                <div class='timelineimg'>
+                    <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 3" class="img-circle">
+                    <p class="centered">Period 3</p>
+                </div>
+                <div class='timelineimg'>
+                    <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 4" class="img-circle">
+                    <p class="centered">Period 4</p>
+                </div>
+                <div class='timelineimg'>
+                    <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 5" class="img-circle">
+                    <p class="centered">Period 5</p>
+                </div>
             </div>
         </div>
     </header>
@@ -59,37 +71,44 @@
         <div id="regent">
             <h3>US History Regents Review</h3>
             <h4>Everything you need to know to ACE your regents.</h4>
+
+            <h4>Unit 1:Colonial America</h4>
+            <p></p>
+            <h4>Unit 2:American Revolution</h4>
+            <p></p>
+            <h4>Unit 3: Building a Nation, Sectionalism and the Civil War</h4>
+            <p></p>
+            <h4>Unit 4: Reconstruction </h4>
+            <p></p>
+            <h4>Unit 5: The Gilded Age and Progressive Era</h4>
+            <p></p>
+            <h4>Unit 6: Rise of American Power</h4>
+            <p></p>
+            <h4>Unit 7: Propserity and Depression</h4>
+            <p></p>
+            <h4>Unit 8: World War II</h4>
+            <p></p>
+            <h4>Unit 9: Cold War</h4>
+            <p></p>
+            <h4>Unit 10: Domestic Change</h4>
+            <p></p>
         </div>
     </header>
-    
-    <h4>Unit 1:Colonial America</h4>
-    <p></p>
-    <h4>Unit 2:American Revolution</h4>
-    <p></p>
-    <h4>Unit 3: Building a Nation, Sectionalism and the Civil War</h4>
-    <p></p>
-    <h4>Unit 4: Reconstruction </h4>
-    <p></p>
-    <h4>Unit 5: The Gilded Age and Progressive Era</h4>
-    <p></p>
-    <h4>Unit 6: Rise of American Power</h4>
-    <p></p>
-    <h4>Unit 7: Propserity and Depression</h4>
-    <p></p>
-    <h4>Unit 8: World War II</h4>
-    <p></p>
-    <h4>Unit 9: Cold War</h4>
-    <p></p>
-    <h4>Unit 10: Domestic Change</h4>
-    <p></p>
+
     <div id='loginPage'>
-        <input type="text" name="Username" placeholder='Username'/>
-        <input type="text" name="Password" placeholder='Password'/>
+        <input type="text" name="Username" placeholder='Username' />
+        <input type="text" name="Password" placeholder='Password' />
+        <button>Sign In</button>
         <button id='googlelogin'>Sign in with google</button>
     </div>
-    
+
     <div id='signUpPage'>
-        
+        <h3>Create Your Account</h3>
+        <input type="text" name="First Name" placeholder='First Name' /><br>
+        <input type="text" name="Last Name" placeholder='Last Name' /><br>
+        <input type="text" name="Username" placeholder='Username' /><br>
+        <input type="text" name="Password" placeholder='Password' /><br>
+        <input type="text" name="Email" placeholder='Email' /><br>
     </div>
 </body>
 
@@ -122,8 +141,8 @@
         var auth = firebase.auth();
         auth.onAuthStateChanged(newLogin);
     }
-    
-    function app(user){
+
+    function app(user) {
         //user.displayName
         //user.email
         //user.photoURL
@@ -131,8 +150,8 @@
         console.log(user.displayName)
         alert('You are logged in!')
     }
-    
-    $("#googlelogin").click(function(){
+
+    $("#googlelogin").click(function() {
         login()
     });
 </script>
