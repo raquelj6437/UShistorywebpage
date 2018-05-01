@@ -31,12 +31,12 @@ html, body {
     }
 }
  
-@media (min-width: 900px) {
-    #intro-1 {
-        font-size: 60px;
-    }
+/*@media (min-width: 900px) {*/
+/*    #intro-1 {*/
+/*        font-size: 60px;*/
+/*    }*/
  
-}
+/*}*/
 
 #APReview, #regent{
   position: relative;
