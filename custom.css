@@ -20,23 +20,24 @@ html, body {
 }
 
 @media (min-width: 600px) {
-    #intro-1 {
-        font-size: 18px;
+    h1 {
+        font-size: 5px;
+        font-family: 'Playfair Display', serif;
     }
 }
  
-@media (min-width: 800px) {
-    #intro-1 {
-        font-size: 40px;
-    }
-}
+/*@media (max-width: 800px) {*/
+/*    h1 {*/
+/*        font-size: 40px;*/
+/*    }*/
+/*}*/
  
-@media (min-width: 900px) {
-    #intro-1 {
-        font-size: 60px;
-    }
+/*@media (max-width: 900px) {*/
+/*    h1 {*/
+/*        font-size: 60px;*/
+/*    }*/
  
-}
+/*}*/
 
 #APReview, #regent{
   position: relative;
@@ -44,10 +45,10 @@ html, body {
   right: 5%;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
+/*h1 {*/
+/*  font-family: 'Playfair Display', serif;*/
   
-}
+/*}*/
 
 h2 {
   font-family: 'Playfair Display', serif;
