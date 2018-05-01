@@ -19,11 +19,14 @@ html, body {
   color:white;
 }
 
+h1{
+  font-family: 'Playfair Display', serif;
+}
+
 @media (min-width: 600px) {
-    h1 {
-        font-size: 5px;
-        font-family: 'Playfair Display', serif;
-    }
+    /*h1 {*/
+    /*    font-size: 5px;*/
+    /*}*/
 }
  
 /*@media (max-width: 800px) {*/
@@ -92,7 +95,6 @@ body {
   margin: 0 auto;
 }
 
-/*DO NOT TOUCH TIMELINE CSS!!!*/
 .vl {
   border-left: 2px solid grey;
   height: 400px;
