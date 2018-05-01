@@ -21,6 +21,13 @@
         $(function() {
             // $('#intro-3').hide()
             // $('#intro-1').hide()
+            
+            $('.periods').hide()
+            
+            $("#period1Image").click(function() {
+                $('.periods').hide()
+                $('#period' +value).show()
+            });
         });
     </script>
 </head>
@@ -43,39 +50,39 @@
             <div id='timeline'>
                 <p id='timelineTitle'>Timeline</p>
                 <div class="vl"></div>
-                <div class='timelineimg'>
+                <div class='timelineimg' id='period1Image' value='1'>
                     <img src="images/timeline/period1.jpg" alt="Period 1" class="img-circle">
                     <p class="centered">Period 1</p>
                 </div>
-                <div class='timelineimg'>
-                    <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 2" class="img-circle">
+                <div class='timelineimg' id="period2Image" value='2'>
+                    <img src="images/timeline/period2.jpg" alt="Period 2" class="img-circle">
                     <p class="centered">Period 2</p>
                 </div>
-                <div class='timelineimg'>
-                    <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 3" class="img-circle">
+                <div class='timelineimg' id="period3Image" value='3'>
+                    <img src="images/timeline/period2.jpg" alt="Period 3" class="img-circle">
                     <p class="centered">Period 3</p>
                 </div>
-                <div class='timelineimg'>
-                    <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 4" class="img-circle">
+                <div class='timelineimg' id="period4Image" value='4'>
+                    <img src="images/timeline/period2.jpg" alt="Period 4" class="img-circle">
                     <p class="centered">Period 4</p>
                 </div>
-                <div class='timelineimg'>
-                    <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 5" class="img-circle">
+                <div class='timelineimg' id="period5Image" value='5'>
+                    <img src="images/timeline/period2.jpg" alt="Period 5" class="img-circle">
                     <p class="centered">Period 5</p>
                 </div>
-                <div class='timelineimg'>
-                    <img id="period2Image" src="images/timeline/period2.jpg" alt="Period 6" class="img-circle">
+                <div class='timelineimg' id="period6Image" value='6'>
+                    <img src="images/timeline/period2.jpg" alt="Period 6" class="img-circle">
                     <p class="centered">Period 6</p>
                 </div>
             </div>
             <div class='content'>
-                <div id='period1'>
+                <div id='period1' class='periods'>
                     <h1>Period 1</h1>
                     <h3>(1491 – 1607)</h3>
                     <p>Key Concept 1.1: As native populations migrated and settled across the vast expanse of North America over time, they developed distinct and increasingly complex societies by adapting to and transforming their diverse environments.
                         <br><br>Key Concept 1.2: Contact among Europeans, Native Americans, and Africans resulted in the Columbian Exchange and significant social, cultural, and political changes on both sides of the Atlantic Ocean.</p>
                 </div>
-                <div id='period2'>
+                <div id='period2' class='periods'>
                     <h1>Period 2</h1>
                     <h3>(1607-1754)</h3>
                     <p>Key Concept 2.1: Europeans developed a variety of colonization and migration patterns, influenced by different imperial goals, cultures, and the varied North American environments where they settled, and they competed with each other
@@ -83,21 +90,21 @@
                         <br><br> Key Concept 2.2: The British colonies participated in political, social, cultural, and economic exchanges with Great Britain that encouraged both stronger bonds with Britain and resistance to Britain’s control.<br><br>Key
                         Concept 2.3: European colonization efforts in North America stimulated intercultural contact and intensified conflict between the various groups of colonizers and native peoples.</p>
                 </div>
-                <div id='period3'>
+                <div id='period3' class='periods'>
                     <h1>Period 3</h1>
                     <h3>(1754-1800)</h3>
                     <p>Key Concept 3.1: British attempts to assert tighter control over its North American colonies and the colonial resolve to pursue self-government led to a colonial independence movement and the Revolutionary War.
                         <br><br> Key Concept 3.2: The American Revolution’s democratic and republican ideals inspired new experiments with different forms of government.
                         <br><br> Key Concept 3.3: Migration within North America and competition over resources, boundaries, and trade intensified conflicts among peoples and nations.</p>
                 </div>
-                <div id='period4'>
+                <div id='period4' class='periods'>
                     <h1>Period 4</h1>
                     <h3>(1800-1848)</h3>
                     <p>Key Concept 4.1: The United States began to develop a modern democracy and celebrated a new national culture, while Americans sought to define the nation’s democratic ideals and change their society and institutions to match them.
                         <br><br> Key Concept 4.2: Innovations in technology, agriculture, and commerce powerfully accelerated the American economy, precipitating profound changes to U.S. society and to national and regional identities.
                         <br><br> Key Concept 4.3: The U.S. interest in increasing foreign trade and expanding its national borders shaped the nation’s foreign policy and spurred government and private initiatives.</p>
                 </div>
-                <div id='period5'>
+                <div id='period5' class='periods'>
                     <h1>Period 5</h1>
                     <h3>(1844-1877)</h3>
                     <p>Key Concept 5.1: The United States became more connected with the world, pursued an expansionist foreign policy in the Western Hemisphere, and emerged as the destination for many migrants from other countries.
@@ -105,21 +112,21 @@
                         <br><br> Key Concept 5.3: The Union victory in the Civil War and the contested reconstruction of the South settled the issues of slavery and secession, but left unresolved many questions about the power of the federal government
                         and citizenship rights.</p>
                 </div>
-                <div id='period6'>
+                <div id='period6' class='periods'>
                     <h1>Period 6</h1>
                     <h3>(1865-1898)</h3>
                     <p>Key Concept 6.1: Technological advances, large-scale production methods, and the opening of new markets encouraged the rise of industrial capitalism in the United States.
                         <br><br> Key Concept 6.2: The migrations that accompanied industrialization transformed both urban and rural areas of the United States and caused dramatic social and cultural change.
                         <br><br> Key Concept 6.3: The Gilded Age produced new cultural and intellectual movements, public reform efforts, and political debates over economic and social policies.</p>
                 </div>
-                <div id='period7'>
+                <div id='period7' class='periods'>
                     <h1>Period 7</h1>
                     <h3>(1890-1945)</h3>
                     <p>Key Concept 7.1: Growth expanded opportunity, while economic instability led to new efforts to reform U.S. society and its economic system.
                         <br><br> Key Concept 7.2: Innovations in communications and technology contributed to the growth of mass culture, while significant changes occurred in internal and international migration patterns.
                         <br><br> Key Concept 7.3: Participation in a series of global conflicts propelled the United States into a position of international power while renewing domestic debates over the nation’s proper role in the world.</p>
                 </div>
-                <div id='period8'>
+                <div id='period8' class='periods'>
                     <h1>Period 8</h1>
                     <h3>(1945-1980)</h3>
                     <p>Key Concept 8.1: The United States responded to an uncertain and unstable postwar world by asserting and working to maintain a position of global leadership, with far-reaching domestic and international consequences.
