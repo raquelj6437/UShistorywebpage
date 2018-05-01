@@ -19,12 +19,14 @@ html, body {
   color:white;
 }
 
+
 @media (min-width: 768px) {
     #intro-1 {
         font-size: 20px;
         font-family: 'Playfair Display', serif;
     }
 }
+
  
 @media (min-width: 992px) {
     #intro-1 {
@@ -48,9 +50,10 @@ html, body {
 }
 
 
-h1,h2,h3,h4,h5 {
+h2,h3,h4,h5 {
   font-family: 'Playfair Display', serif;
 }
+
 
 button{
   transition-duration: 1.2s;
@@ -86,7 +89,6 @@ body {
   margin: 0 auto;
 }
 
-/*DO NOT TOUCH TIMELINE CSS!!!*/
 .vl {
   border-left: 2px solid grey;
   height: 400px;
