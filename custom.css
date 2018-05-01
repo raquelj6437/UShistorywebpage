@@ -19,32 +19,29 @@ html, body {
   color:white;
 }
 
-h1{
-  font-family: 'Playfair Display', serif;
+
+@media (min-width: 768px) {
+    #intro-1 {
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+    }
 }
 
-@media (min-width: 600px) {
-    /*h1 {*/
-    /*    font-size: 5px;*/
-    /*}*/
+ 
+@media (min-width: 992px) {
+    #intro-1 {
+        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+@media (min-width: 1200px) {
+    #intro-1 {
+        font-size: 40px;
+        font-family: 'Playfair Display', serif;
+    }
 }
  
-/*@media (max-width: 800px) {*/
-/*    h1 {*/
-/*        font-size: 40px;*/
-/*    }*/
-/*}*/
- 
-/*@media (max-width: 900px) {*/
-/*    h1 {*/
-
-/*@media (min-width: 900px) {*/
-/*    #intro-1 {*/
-
-/*        font-size: 60px;*/
-/*    }*/
- 
-/*}*/
 
 #APReview, #regent{
   position: relative;
@@ -52,14 +49,11 @@ h1{
   right: 5%;
 }
 
-/*h1 {*/
-/*  font-family: 'Playfair Display', serif;*/
-  
-/*}*/
 
-h2 {
+h2,h3,h4,h5 {
   font-family: 'Playfair Display', serif;
 }
+
 
 button{
   transition-duration: 1.2s;
@@ -75,7 +69,7 @@ button{
 
 .logButton{
   background-color: white;
-  border: 5px solid black;
+  
 }
 
 .logButton:hover{
