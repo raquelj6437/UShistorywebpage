@@ -147,3 +147,10 @@ body {
   text-align:center;
   border-bottom: 2px solid black;
 }
+
+.periods{
+  position: relative;
+  left: 25%;
+  right: 10%;
+  bottom: 370px;
+}
