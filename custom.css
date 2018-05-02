@@ -58,6 +58,7 @@ h2,h3,h4,h5 {
 button{
   transition-duration: 1.2s;
   background-color: white;
+  border-radius: 10px;
 }
 
 .text-vertical-center {
