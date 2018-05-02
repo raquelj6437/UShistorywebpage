@@ -21,15 +21,15 @@
             // $('#intro-1').hide()
 
             $('.periods').hide()
-            
+
             $(".timelineimg").click(function() {
                 $('.periods').hide()
                 var value = $(this).attr('id')
-                value=value.replace('period','')
-                value=value.replace('Image','')
+                value = value.replace('period', '')
+                value = value.replace('Image', '')
                 console.log(value)
-                $('#period'+value).show()
-              });
+                $('#period' + value).show()
+            });
         });
     </script>
 </head>
@@ -148,8 +148,12 @@
         <div id="regent">
             <!--<div class="jumbotron" id="regent-info">-->
 
-            <h2><bold>US History Regents Review</bold></h2>
-            <h3><bold>Everything you need to know to ACE your regents.</bold></h3>
+            <h2>
+                <bold>US History Regents Review</bold>
+            </h2>
+            <h3>
+                <bold>Everything you need to know to ACE your regents.</bold>
+            </h3>
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <h4>Unit 1: Colonial America</h4>
@@ -233,19 +237,19 @@
     </header>
 
     <div id='loginPage'>
-        <input type="text" name="Username" placeholder='Username' id='oldUser'/>
-        <input type="text" name="Password" placeholder='Password' id='oldUserPass'/>
+        <input type="text" name="Username" placeholder='Username' id='oldUser' />
+        <input type="text" name="Password" placeholder='Password' id='oldUserPass' />
         <button id='signIn'>Sign In</button>
         <button id='googlelogin'>Sign in with google</button>
     </div>
 
     <div id='signUpPage'>
         <h3>Create Your Account</h3>
-        <input type="text" name="First Name" placeholder='First Name' id='firstName'/><br>
-        <input type="text" name="Last Name" placeholder='Last Name' id='lastName'/><br>
-        <input type="text" name="Username" placeholder='Username' id='username'/><br>
-        <input type="text" name="Password" placeholder='Password' id='password'/><br>
-        <input type="text" name="Email" placeholder='Email' id='email'/><br>
+        <input type="text" name="First Name" placeholder='First Name' id='firstName' /><br>
+        <input type="text" name="Last Name" placeholder='Last Name' id='lastName' /><br>
+        <input type="text" name="Username" placeholder='Username' id='username' /><br>
+        <input type="text" name="Password" placeholder='Password' id='password' /><br>
+        <input type="text" name="Email" placeholder='Email' id='email' /><br>
         <button id='signUpButton'>Sign Up</button>
     </div>
 </body>
@@ -292,51 +296,51 @@
     $("#googlelogin").click(function() {
         login()
     });
-    
+
     function writeAgeData(firstName, lastName, username, password, email) {
-      firebase.database().ref('user/').push().set({
-        firstName: firstName,
-        lastName: lastName,
-        username: username,
-        password: password,
-        email: email
-      });
+        firebase.database().ref('user/').push().set({
+            firstName: firstName,
+            lastName: lastName,
+            username: username,
+            password: password,
+            email: email
+        });
     }
-    
+
     $("#signUpButton").click(function() {
         var firstName = $("#firstName").val();
         var lastName = $("#lastName").val();
         var username = $("#username").val();
         var password = $("#password").val();
         var email = $("#email").val();
-        
-        if(firstName==!''&&lastName==!''&&username==!''&&password==!''&&email==!''){
+
+        if (firstName == !'' && lastName == !'' && username == !'' && password == !'' && email == !'') {
             writeAgeData(firstName, lastName, username, password, email)
         }
-        else{
+        else {
             alert('please fill in everything')
         }
     });
-    
-    $("#signIn").click(function() {
-        var query = firebase.database().ref('user/').orderByKey();
-      query.once("value")
-        .then(function(snapshot) {
-          snapshot.forEach(function(childSnapshot) {
-            var childData = childSnapshot.val();
-            var objects = Object.values(childData)
-            console.log(objects)
 
-            var userVal=$("#oldUser").val();
-            var userValPass=$("#oldUserPass").val();
-            if(userVal==objects[4]&&userValPass==objects[3]){
-                alert('youre logged in')
-            }
-            else{
-                alert('wrong username or password')
-            }
-        });
-      });
+    $("#signIn").click(function() {
+        var userVal = $("#oldUser").val();
+        var userValPass = $("#oldUserPass").val();
+        var query = firebase.database().ref('user/').orderByKey();
+        query.once("value")
+            .then(function(snapshot) {
+                snapshot.forEach(function(childSnapshot) {
+                    var childData = childSnapshot.val();
+                    var objects = Object.values(childData)
+                    console.log(objects)
+
+                    if (userVal == objects[4] && userValPass == objects[3]) {
+                        alert('youre logged in')
+                    }
+                    else {
+                        alert('wrong username or password')
+                    }
+                });
+            });
     });
 </script>
 
