@@ -17,21 +17,19 @@
 
     <script>
         $(function() {
-            $('#intro-3').hide()
-            $('#intro-1').hide()
-            $('#intro-2').hide()
-            $('#signUpPage').hide()
+            // $('#intro-3').hide()
+            // $('#intro-1').hide()
 
             $('.periods').hide()
-
+            
             $(".timelineimg").click(function() {
                 $('.periods').hide()
                 var value = $(this).attr('id')
-                value = value.replace('period', '')
-                value = value.replace('Image', '')
+                value=value.replace('period','')
+                value=value.replace('Image','')
                 console.log(value)
-                $('#period' + value).show()
-            });
+                $('#period'+value).show()
+              });
         });
     </script>
 </head>
@@ -79,16 +77,10 @@
                     <img src="images/timeline/period2.jpg" alt="Period 6" class="img-circle">
                     <p class="centered">Period 6</p>
                 </div>
-                <div class='timelineimg' id="period7Image">
-                    <img src="images/timeline/period2.jpg" alt="Period 7" class="img-circle">
-                    <p class="centered">Period 7</p>
-                </div>
-                <div class='timelineimg' id="period8Image">
-                    <img src="images/timeline/period2.jpg" alt="Period 8" class="img-circle">
-                    <p class="centered">Period 8</p>
-                </div>
             </div>
-            
+            <!--</div>-->
+
+            <!--<div class="col-sm-11">-->
             <div class='content'>
                 <div id='period1' class='periods'>
                     <h1>Period 1</h1>
@@ -154,14 +146,8 @@
 
     <header id="intro-3">
         <div id="regent">
-            <!--<div class="jumbotron" id="regent-info">-->
-
-            <h2>
-                <bold>US History Regents Review</bold>
-            </h2>
-            <h3>
-                <bold>Everything you need to know to ACE your regents.</bold>
-            </h3>
+            <h2><bold>US History Regents Review</bold></h2>
+            <h3><bold>Everything you need to know to ACE your regents.</bold></h3>
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <h4>Unit 1: Colonial America</h4>
@@ -256,13 +242,25 @@
 
     <div id='signUpPage'>
         <h3>Create Your Account</h3>
-        <input type="text" name="First Name" placeholder='First Name' id='firstName' /><br>
-        <input type="text" name="Last Name" placeholder='Last Name' id='lastName' /><br>
-        <input type="text" name="Username" placeholder='Username' id='username' /><br>
-        <input type="text" name="Password" placeholder='Password' id='password' /><br>
-        <input type="text" name="Email" placeholder='Email' id='email' /><br>
-        <button id='signUpButton'>Sign Up</button>
+    <div id='loginPage'>
+        <h1>Welcome to US History</h1>
+        <br><br>
+        <p id='wrongUserPass'></p><br>
+        <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control"/><br>
+        <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control"/><br>
+        <button id='signIn'>Sign In</button><br>
+        <button id='googlelogin'>Sign in with google</button>
     </div>
+
+    <!--<div id='signUpPage'>-->
+    <!--    <h3>Create Your Account</h3>-->
+    <!--    <input type="text" name="First Name" placeholder='First Name' id='firstName' /><br>-->
+    <!--    <input type="text" name="Last Name" placeholder='Last Name' id='lastName' /><br>-->
+    <!--    <input type="text" name="Username" placeholder='Username' id='username' /><br>-->
+    <!--    <input type="text" name="Password" placeholder='Password' id='password' /><br>-->
+    <!--    <input type="text" name="Email" placeholder='Email' id='email' /><br>-->
+    <!--    <button id='signUpButton'>Sign Up</button>-->
+    <!--</div>-->
 </body>
 
 
@@ -309,6 +307,20 @@
     });
 
     function writeAgeData(firstName, lastName, username, password, email) {
+<<<<<<<<< saved version
+        //user.displayName
+        //user.email
+        //user.photoURL
+        //user.iud
+        console.log(user.displayName)
+        alert('You are logged in!')
+    }
+
+    $("#googlelogin").click(function() {
+        login()
+    });
+
+    function writeAgeData(firstName, lastName, username, password, email) {
         firebase.database().ref('user/').push().set({
             firstName: firstName,
             lastName: lastName,
@@ -316,6 +328,15 @@
             password: password,
             email: email
         });
+=========
+      firebase.database().ref('user/').push().set({
+        firstName: firstName,
+        lastName: lastName,
+        username: username,
+        password: password,
+        email: email
+      });
+>>>>>>>>> local version
     }
 
     $("#signUpButton").click(function() {
@@ -344,6 +365,22 @@
                     var objects = Object.values(childData)
                     console.log(objects)
 
+<<<<<<<<< saved version
+            alert('please fill in everything')
+        }
+    });
+
+    $("#signIn").click(function() {
+        var userVal = $("#oldUser").val();
+        var userValPass = $("#oldUserPass").val();
+        var query = firebase.database().ref('user/').orderByKey();
+        query.once("value")
+            .then(function(snapshot) {
+                snapshot.forEach(function(childSnapshot) {
+                    var childData = childSnapshot.val();
+                    var objects = Object.values(childData)
+                    console.log(objects)
+
                     if (userVal == objects[4] && userValPass == objects[3]) {
                         alert('youre logged in')
                     }
@@ -352,6 +389,18 @@
                     }
                 });
             });
+=========
+            var userVal=$("#oldUser").val();
+            var userValPass=$("#oldUserPass").val();
+            if(userVal==objects[4]&&userValPass==objects[3]){
+                alert('youre logged in')
+            }
+            else{
+                alert('wrong username or password')
+            }
+        });
+      });
+>>>>>>>>> local version
     });
 </script>
 
