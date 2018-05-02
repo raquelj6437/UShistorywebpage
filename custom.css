@@ -216,6 +216,7 @@ body {
   border-bottom: 2px solid black;
 }
 
+<<<<<<< HEAD
 /*.content {*/
 /*  width: 100%;*/
 /*  height: 100%;*/
@@ -227,3 +228,10 @@ body {
 /*  height: 100%;*/
 /*  width: 100%;*/
 /*}*/
+=======
+.periods{
+  position: relative;
+  left: 140px;
+  bottom: 370px;
+}
+>>>>>>> e3be0e35eaa907420d59df556ee5d222e7f58fea
