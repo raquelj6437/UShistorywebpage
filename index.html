@@ -205,12 +205,12 @@
 
     <div id='signUpPage'>
         <h3>Create Your Account</h3>
-        <input type="text" name="First Name" placeholder='First Name' /><br>
-        <input type="text" name="Last Name" placeholder='Last Name' /><br>
-        <input type="text" name="Username" placeholder='Username' /><br>
-        <input type="text" name="Password" placeholder='Password' /><br>
-        <input type="text" name="Email" placeholder='Email' /><br>
-        <button>Sign Up</button>
+        <input type="text" name="First Name" placeholder='First Name' id='firstName'/><br>
+        <input type="text" name="Last Name" placeholder='Last Name' id='lastName'/><br>
+        <input type="text" name="Username" placeholder='Username' id='username'/><br>
+        <input type="text" name="Password" placeholder='Password' id='password'/><br>
+        <input type="text" name="Email" placeholder='Email' id='email'/><br>
+        <button id='signUpButton'>Sign Up</button>
     </div>
 </body>
 
@@ -255,6 +255,25 @@
 
     $("#googlelogin").click(function() {
         login()
+    });
+    
+    function writeAgeData(firstName, lastName, username, password, email) {
+      firebase.database().ref('user/').push().set({
+        firstName: firstName,
+        lastName: lastName,
+        username: username,
+        password: password,
+        email: email
+      });
+    }
+    
+    $("#signUpButton").click(function() {
+        var firstName = $("#firstName").val();
+        var lastName = $("#lastName").val();
+        var username = $("#username").val();
+        var password = $("#password").val();
+        var email = $("#email").val();
+        writeAgeData(firstName, lastName, username, password, email)
     });
 </script>
 
