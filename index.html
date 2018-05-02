@@ -233,9 +233,9 @@
     </header>
 
     <div id='loginPage'>
-        <input type="text" name="Username" placeholder='Username' />
-        <input type="text" name="Password" placeholder='Password' />
-        <button>Sign In</button>
+        <input type="text" name="Username" placeholder='Username' id='oldUser'/>
+        <input type="text" name="Password" placeholder='Password' id='oldUserPass'/>
+        <button id='signIn'>Sign In</button>
         <button id='googlelogin'>Sign in with google</button>
     </div>
 
@@ -310,6 +310,27 @@
         var password = $("#password").val();
         var email = $("#email").val();
         writeAgeData(firstName, lastName, username, password, email)
+    });
+    
+    $("#signIn").click(function() {
+        var query = firebase.database().ref('user/').orderByKey();
+      query.once("value")
+        .then(function(snapshot) {
+          snapshot.forEach(function(childSnapshot) {
+            var childData = childSnapshot.val();
+            var objects = Object.values(childData)
+            console.log(objects)
+
+            var userVal=$("#oldUser").val();
+            var userValPass=$("#oldUserPass").val();
+            if(userVal==objects[4]&&userValPass==objects[3]){
+                alert('youre logged in')
+            }
+            else{
+                alert('wrong username or password')
+            }
+        });
+      });
     });
 </script>
 
