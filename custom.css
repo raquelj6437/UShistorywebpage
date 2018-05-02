@@ -196,7 +196,7 @@ body {
 }
 
 .centered:hover{
-  display: block;
+  display: relative;
 }
 
 #timeline img:hover + .centered{
