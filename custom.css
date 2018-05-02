@@ -150,7 +150,6 @@ body {
 
 .periods{
   position: relative;
-  left: 25%;
-  right: 10%;
+  left: 140px;
   bottom: 370px;
 }
