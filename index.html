@@ -309,7 +309,13 @@
         var username = $("#username").val();
         var password = $("#password").val();
         var email = $("#email").val();
-        writeAgeData(firstName, lastName, username, password, email)
+        
+        if(firstName==!''&&lastName==!''&&username==!''&&password==!''&&email==!''){
+            writeAgeData(firstName, lastName, username, password, email)
+        }
+        else{
+            alert('please fill in everything')
+        }
     });
     
     $("#signIn").click(function() {
