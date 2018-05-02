@@ -22,8 +22,12 @@
             
             $('.periods').hide()
             
-            $("#period1Image").click(function() {
+            $(".timelineimg").click(function() {
                 $('.periods').hide()
+                var value = $(this).attr('id')
+                value=value.replace('period','')
+                value=value.replace('Image','')
+                console.log(value)
                 $('#period' +value).show()
             });
         });
