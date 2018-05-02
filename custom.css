@@ -254,3 +254,15 @@ body {
   margin: 0 auto;
   float: none;
 }
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+caption {
+  font-size:20px;
+  color: black;
+  
+}

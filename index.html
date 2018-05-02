@@ -21,15 +21,15 @@
             // $('#intro-1').hide()
 
             $('.periods').hide()
-            
+
             $(".timelineimg").click(function() {
                 $('.periods').hide()
                 var value = $(this).attr('id')
-                value=value.replace('period','')
-                value=value.replace('Image','')
+                value = value.replace('period', '')
+                value = value.replace('Image', '')
                 console.log(value)
-                $('#period'+value).show()
-              });
+                $('#period' + value).show()
+            });
         });
     </script>
 </head>
@@ -117,6 +117,97 @@
                         <br><br> Key Concept 5.2: Intensified by expansion and deepening regional divisions, debates over slavery and other economic, cultural, and political issues led the nation into civil war.
                         <br><br> Key Concept 5.3: The Union victory in the Civil War and the contested reconstruction of the South settled the issues of slavery and secession, but left unresolved many questions about the power of the federal government
                         and citizenship rights.</p>
+                    <table>
+                        <caption>Key Events and Battles of the Civil War</caption>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Significance</th>
+                        </tr>
+                        <tr>
+                            <td>Lincoln elected president</td>
+                            <td>November 1860</td>
+                            <td>U.S.</td>
+                            <td>Though winning in the electoral college, Lincoln's lack of a popular majority (1.9 million out of 4.7 million votes cast) is an indication of the problems he would face with a divided nation</td>
+                        </tr>
+                        <tr>
+                            <td>South Carolina secedes</td>
+                            <td>December 1860</td>
+                            <td>South Carolina</td>
+                            <td>On news of Lincoln's election, South Carolina (site of nullification fight in 1830s) secedes</td>
+                        </tr>
+                        <tr>
+                            <td>Confederacy formed</td>
+                            <td>February 1861</td>
+                            <td>Montgomery, Alabama</td>
+                            <td>Seven states form Confederacy, write their own constitution, and plan for an independent nation</td>
+                        </tr>
+                        <tr>
+                            <td>Lincoln inaugurated</td>
+                            <td>March 1861</td>
+                            <td>Washington, D.C.</td>
+                            <td>Lincoln enters Washington D.C. in disguise because of unrest. Southerners begin seizing federal posts.</td>
+                        </tr>
+                        <tr>
+                            <td>Ft. Sumter attacked</td>
+                            <td>April 1861</td>
+                            <td>Charleston, SC</td>
+                            <td>Lincoln decides to supply Ft. Sumter, but wants the South to fire the first shot.</td>
+                        </tr>
+                        <tr>
+                            <td>Bull Run (Manassas), 1st battle</td>
+                            <td>July 21, 1861</td>
+                            <td>Northern Virginia</td>
+                            <td>Gen. McDowell leads 30,000 men against Gen. Johnston's 22,000 Southern troops in an attempt to crush the rebels and go "On to Richmond." South scores victory as Union troops flee back to Washington in disarray. McDowell replaced
+                                by Gen. McClellan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ft. Henry & Ft. Donelson</td>
+                            <td>February 1862</td>
+                            <td>Tennessee rivers</td>
+                            <td>Gen. Grant captures two forts on the Tennessee and Cumberland Rivers. Confederates forced out of Kentucky and yield much of Tennessee</td>
+                        </tr>
+                        <tr>
+                            <td>Monitor vs. Merrimac</td>
+                            <td>March 1862</td>
+                            <td>Off Hampton Roads, Virginia</td>
+                            <td>First ironclad battle in history ends in a draw as the Merrimac withdraws after daylong exchange of fire. Union blockade of South is maintained</td>
+                        </tr>
+                        <tr>
+                            <td>Shiloh (Pittsburgh Landing)</td>
+                            <td>April 1862</td>
+                            <td>Tennessee</td>
+                            <td>Grant overcomes Southern forces with heavy losses for each side: 13,000 Union casualties, 11,000 for South</td>
+                        </tr>
+                        <tr>
+                            <td>New Orleans</td>
+                            <td>April 1862</td>
+                            <td>Louisiana</td>
+                            <td>Farragut seizes New Orleans for Union after boldly attacking Southern position. 11 Southern ships sunk</td>
+                        </tr>
+                        <tr>
+                            <td>Peninsular Campaign (Yorktown, Seven Days' Battle, Fair Oaks)</td>
+                            <td>March-July 1862</td>
+                            <td>Southern Virginia</td>
+                            <td>After continual prodding by Lincoln, McClellan decides to attack Richmond via the South. He moves his large army down the Potomac, marches on Richmond, and then assumes a defensive position rather than pushing for victory.
+                                Gen. Lee takes command of Southern troops</td>
+                        </tr>
+                        <tr>
+                            <td>Bull Run (Manassas) 2nd battle</td>
+                            <td>August 1862</td>
+                            <td>Northern Virginia</td>
+                            <td>McClellan replaced by Gen. Pope. Lee and Gen. Stonewall Jackson defeat Union troops again at Manassas and Pope is replaced by McClellan</td>
+                        </tr>
+                        <tr>
+                            <td>Antietam</td>
+                            <td>September 1862</td>
+                            <td>Maryland</td>
+                            <td>Heavily outnumbered, Lee's troops face McClellan in bloody fighting. Over 23,000 casualties (more than all previous American wars combined). Lee retreats to Virginia</td>
+                        </tr>
+                        <tfoot>Source: http://home.earthlink.net/~gfeldmeth/chart.civwar.html</tfoot>
+                    </table>
                 </div>
                 <div id='period6' class='periods'>
                     <h1>Period 6</h1>
@@ -146,8 +237,12 @@
 
     <header id="intro-3">
         <div id="regent">
-            <h2><bold>US History Regents Review</bold></h2>
-            <h3><bold>Everything you need to know to ACE your regents.</bold></h3>
+            <h2>
+                <bold>US History Regents Review</bold>
+            </h2>
+            <h3>
+                <bold>Everything you need to know to ACE your regents.</bold>
+            </h3>
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <h4>Unit 1: Colonial America</h4>
@@ -234,33 +329,33 @@
         <h1>Welcome to US History</h1>
         <br><br>
         <p id='wrongUserPass'></p><br>
-        <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control"/><br>
-        <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control"/><br>
-        <button id='signIn'>Sign In</button><br>
-        <button id='googlelogin'>Sign in with google</button>
-    </div>
-
-    <div id='signUpPage'>
-        <h3>Create Your Account</h3>
-    <div id='loginPage'>
-        <h1>Welcome to US History</h1>
-        <br><br>
-        <p id='wrongUserPass'></p><br>
-        <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control"/><br>
-        <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control"/><br>
+        <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control" /><br>
+        <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control" /><br>
         <button id='signIn'>Sign In</button><br>
         <button id='googlelogin'>Sign in with google</button>
     </div>
 
     <!--<div id='signUpPage'>-->
     <!--    <h3>Create Your Account</h3>-->
-    <!--    <input type="text" name="First Name" placeholder='First Name' id='firstName' /><br>-->
-    <!--    <input type="text" name="Last Name" placeholder='Last Name' id='lastName' /><br>-->
-    <!--    <input type="text" name="Username" placeholder='Username' id='username' /><br>-->
-    <!--    <input type="text" name="Password" placeholder='Password' id='password' /><br>-->
-    <!--    <input type="text" name="Email" placeholder='Email' id='email' /><br>-->
-    <!--    <button id='signUpButton'>Sign Up</button>-->
+    <!--<div id='loginPage'>-->
+    <!--    <h1>Welcome to US History</h1>-->
+    <!--    <br><br>-->
+    <!--    <p id='wrongUserPass'></p><br>-->
+    <!--    <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control"/><br>-->
+    <!--    <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control"/><br>-->
+    <!--    <button id='signIn'>Sign In</button><br>-->
+    <!--    <button id='googlelogin'>Sign in with google</button>-->
     <!--</div>-->
+
+    <div id='signUpPage'>
+        <h3>Create Your Account</h3>
+        <input type="text" name="First Name" placeholder='First Name' id='firstName' /><br>
+        <input type="text" name="Last Name" placeholder='Last Name' id='lastName' /><br>
+        <input type="text" name="Username" placeholder='Username' id='username' /><br>
+        <input type="text" name="Password" placeholder='Password' id='password' /><br>
+        <input type="text" name="Email" placeholder='Email' id='email' /><br>
+        <button id='signUpButton'>Sign Up</button>
+    </div>
 </body>
 
 
@@ -306,8 +401,12 @@
         login()
     });
 
-    function writeAgeData(firstName, lastName, username, password, email) {
-<<<<<<<<< saved version
+    function writeAgeData(firstName, lastName, username, password, email) { <<
+        <<
+        <<
+        <<
+        <
+        saved version
         //user.displayName
         //user.email
         //user.photoURL
@@ -327,16 +426,19 @@
             username: username,
             password: password,
             email: email
-        });
-=========
-      firebase.database().ref('user/').push().set({
-        firstName: firstName,
-        lastName: lastName,
-        username: username,
-        password: password,
-        email: email
-      });
->>>>>>>>> local version
+        }); ===
+        ===
+        ===
+        firebase.database().ref('user/').push().set({
+            firstName: firstName,
+            lastName: lastName,
+            username: username,
+            password: password,
+            email: email
+        }); >>>
+        >>>
+        >>>
+        local version
     }
 
     $("#signUpButton").click(function() {
@@ -360,47 +462,55 @@
         var query = firebase.database().ref('user/').orderByKey();
         query.once("value")
             .then(function(snapshot) {
-                snapshot.forEach(function(childSnapshot) {
-                    var childData = childSnapshot.val();
-                    var objects = Object.values(childData)
-                    console.log(objects)
+                    snapshot.forEach(function(childSnapshot) {
+                            var childData = childSnapshot.val();
+                            var objects = Object.values(childData)
+                            console.log(objects)
 
-<<<<<<<<< saved version
-            alert('please fill in everything')
-        }
-    });
+                                <<
+                                <<
+                                <<
+                                <<
+                                <
+                                saved version
+                            alert('please fill in everything')
+                        }
+                    });
 
-    $("#signIn").click(function() {
-        var userVal = $("#oldUser").val();
-        var userValPass = $("#oldUserPass").val();
-        var query = firebase.database().ref('user/').orderByKey();
-        query.once("value")
-            .then(function(snapshot) {
-                snapshot.forEach(function(childSnapshot) {
-                    var childData = childSnapshot.val();
-                    var objects = Object.values(childData)
-                    console.log(objects)
+                $("#signIn").click(function() {
+                    var userVal = $("#oldUser").val();
+                    var userValPass = $("#oldUserPass").val();
+                    var query = firebase.database().ref('user/').orderByKey();
+                    query.once("value")
+                        .then(function(snapshot) {
+                            snapshot.forEach(function(childSnapshot) {
+                                var childData = childSnapshot.val();
+                                var objects = Object.values(childData)
+                                console.log(objects)
 
+                                if (userVal == objects[4] && userValPass == objects[3]) {
+                                    alert('youre logged in')
+                                }
+                                else {
+                                    $("#wrongUserPass").text("Wrong Username or Password");
+                                }
+                            });
+                        }); ===
+                    ===
+                    ===
+                    var userVal = $("#oldUser").val();
+                    var userValPass = $("#oldUserPass").val();
                     if (userVal == objects[4] && userValPass == objects[3]) {
                         alert('youre logged in')
                     }
                     else {
-                        $("#wrongUserPass").text("Wrong Username or Password");
+                        alert('wrong username or password')
                     }
                 });
-            });
-=========
-            var userVal=$("#oldUser").val();
-            var userValPass=$("#oldUserPass").val();
-            if(userVal==objects[4]&&userValPass==objects[3]){
-                alert('youre logged in')
-            }
-            else{
-                alert('wrong username or password')
-            }
-        });
-      });
->>>>>>>>> local version
+            }); >>>
+    >>>
+    >>>
+    local version
     });
 </script>
 
