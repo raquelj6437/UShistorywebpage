@@ -17,11 +17,20 @@
 
     <script>
         $(function() {
+<<<<<<< HEAD
             // $('#intro-3').hide()
             // $('#intro-1').hide()
             // $('#intro-2').hide()
             // $('#signUpPage').hide()
 
+=======
+            $('#intro-3').hide()
+            $('#loginPage').hide()
+            $('#intro-2').hide()
+            $('#signUpPage').hide()
+            // $('#intro-1').hide()
+            
+>>>>>>> 0a6b268d29bd78e7ed8b9b0c10509945f71765a1
             $('.periods').hide()
 
             $(".timelineimg").click(function() {
@@ -32,6 +41,26 @@
                 console.log(value)
                 $('#period' + value).show()
             });
+            
+            $("#login").click(function() {
+                $('#loginPage').show()
+                $('#intro-1').hide()
+            });
+            
+            $("#signUp").click(function() {
+                $('#signUpPage').show()
+                $('#intro-1').hide()
+            });
+            
+            $("#APButton").click(function() {
+                $('#intro-2').show()
+                $('#intro-3').hide()
+            });
+            
+            $("#RegentButton").click(function() {
+                $('#intro-2').hide()
+                $('#intro-3').show()
+            });
         });
     </script>
 </head>
@@ -40,8 +69,8 @@
     <header id='intro-1'>
         <div id='heading' class="text-vertical-center">
             <h1>Welcome to US History</h1>
-            <a href='#APReview'><button type="button">AP Review</button></a>
-            <a href='#regent'><button type="button">Regents Review</button></a><br><br>
+            <a href='#APReview'><button type="button" id='APButton'>AP Review</button></a>
+            <a href='#regent'><button type="button" id='RegentButton'>Regents Review</button></a><br><br>
             <a href='#loginPage'><button type="button" class="logButton" id='login'>Login</button><br><br></a>
             <a href='#signUpPage'><button type="button" class="logButton" id='signUp'>Sign Up</button></a>
         </div>
@@ -79,16 +108,10 @@
                     <img src="images/timeline/period2.jpg" alt="Period 6" class="img-circle">
                     <p class="centered">Period 6</p>
                 </div>
-                <div class='timelineimg' id="period7Image">
-                    <img src="images/timeline/period2.jpg" alt="Period 7" class="img-circle">
-                    <p class="centered">Period 7</p>
-                </div>
-                <div class='timelineimg' id="period8Image">
-                    <img src="images/timeline/period2.jpg" alt="Period 8" class="img-circle">
-                    <p class="centered">Period 8</p>
-                </div>
             </div>
-            
+            <!--</div>-->
+
+            <!--<div class="col-sm-11">-->
             <div class='content'>
                 <div id='period1' class='periods'>
                     <h1>Period 1</h1>
@@ -125,6 +148,97 @@
                         <br><br> Key Concept 5.2: Intensified by expansion and deepening regional divisions, debates over slavery and other economic, cultural, and political issues led the nation into civil war.
                         <br><br> Key Concept 5.3: The Union victory in the Civil War and the contested reconstruction of the South settled the issues of slavery and secession, but left unresolved many questions about the power of the federal government
                         and citizenship rights.</p>
+                    <table>
+                        <caption>Key Events and Battles of the Civil War</caption>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Significance</th>
+                        </tr>
+                        <tr>
+                            <td>Lincoln elected president</td>
+                            <td>November 1860</td>
+                            <td>U.S.</td>
+                            <td>Though winning in the electoral college, Lincoln's lack of a popular majority (1.9 million out of 4.7 million votes cast) is an indication of the problems he would face with a divided nation</td>
+                        </tr>
+                        <tr>
+                            <td>South Carolina secedes</td>
+                            <td>December 1860</td>
+                            <td>South Carolina</td>
+                            <td>On news of Lincoln's election, South Carolina (site of nullification fight in 1830s) secedes</td>
+                        </tr>
+                        <tr>
+                            <td>Confederacy formed</td>
+                            <td>February 1861</td>
+                            <td>Montgomery, Alabama</td>
+                            <td>Seven states form Confederacy, write their own constitution, and plan for an independent nation</td>
+                        </tr>
+                        <tr>
+                            <td>Lincoln inaugurated</td>
+                            <td>March 1861</td>
+                            <td>Washington, D.C.</td>
+                            <td>Lincoln enters Washington D.C. in disguise because of unrest. Southerners begin seizing federal posts.</td>
+                        </tr>
+                        <tr>
+                            <td>Ft. Sumter attacked</td>
+                            <td>April 1861</td>
+                            <td>Charleston, SC</td>
+                            <td>Lincoln decides to supply Ft. Sumter, but wants the South to fire the first shot.</td>
+                        </tr>
+                        <tr>
+                            <td>Bull Run (Manassas), 1st battle</td>
+                            <td>July 21, 1861</td>
+                            <td>Northern Virginia</td>
+                            <td>Gen. McDowell leads 30,000 men against Gen. Johnston's 22,000 Southern troops in an attempt to crush the rebels and go "On to Richmond." South scores victory as Union troops flee back to Washington in disarray. McDowell replaced
+                                by Gen. McClellan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ft. Henry & Ft. Donelson</td>
+                            <td>February 1862</td>
+                            <td>Tennessee rivers</td>
+                            <td>Gen. Grant captures two forts on the Tennessee and Cumberland Rivers. Confederates forced out of Kentucky and yield much of Tennessee</td>
+                        </tr>
+                        <tr>
+                            <td>Monitor vs. Merrimac</td>
+                            <td>March 1862</td>
+                            <td>Off Hampton Roads, Virginia</td>
+                            <td>First ironclad battle in history ends in a draw as the Merrimac withdraws after daylong exchange of fire. Union blockade of South is maintained</td>
+                        </tr>
+                        <tr>
+                            <td>Shiloh (Pittsburgh Landing)</td>
+                            <td>April 1862</td>
+                            <td>Tennessee</td>
+                            <td>Grant overcomes Southern forces with heavy losses for each side: 13,000 Union casualties, 11,000 for South</td>
+                        </tr>
+                        <tr>
+                            <td>New Orleans</td>
+                            <td>April 1862</td>
+                            <td>Louisiana</td>
+                            <td>Farragut seizes New Orleans for Union after boldly attacking Southern position. 11 Southern ships sunk</td>
+                        </tr>
+                        <tr>
+                            <td>Peninsular Campaign (Yorktown, Seven Days' Battle, Fair Oaks)</td>
+                            <td>March-July 1862</td>
+                            <td>Southern Virginia</td>
+                            <td>After continual prodding by Lincoln, McClellan decides to attack Richmond via the South. He moves his large army down the Potomac, marches on Richmond, and then assumes a defensive position rather than pushing for victory.
+                                Gen. Lee takes command of Southern troops</td>
+                        </tr>
+                        <tr>
+                            <td>Bull Run (Manassas) 2nd battle</td>
+                            <td>August 1862</td>
+                            <td>Northern Virginia</td>
+                            <td>McClellan replaced by Gen. Pope. Lee and Gen. Stonewall Jackson defeat Union troops again at Manassas and Pope is replaced by McClellan</td>
+                        </tr>
+                        <tr>
+                            <td>Antietam</td>
+                            <td>September 1862</td>
+                            <td>Maryland</td>
+                            <td>Heavily outnumbered, Lee's troops face McClellan in bloody fighting. Over 23,000 casualties (more than all previous American wars combined). Lee retreats to Virginia</td>
+                        </tr>
+                        <tfoot>Source: http://home.earthlink.net/~gfeldmeth/chart.civwar.html</tfoot>
+                    </table>
                 </div>
                 <div id='period6' class='periods'>
                     <h1>Period 6</h1>
@@ -154,8 +268,6 @@
 
     <header id="intro-3">
         <div id="regent">
-            <!--<div class="jumbotron" id="regent-info">-->
-
             <h2>
                 <bold>US History Regents Review</bold>
             </h2>
@@ -246,13 +358,26 @@
     </header>
 
     <div id='loginPage'>
+        <h1>Welcome to US History</h1>
         <br><br>
         <p id='wrongUserPass'></p><br>
-        <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control"/><br>
-        <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control"/><br>
+        <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control" /><br>
+        <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control" /><br>
         <button id='signIn'>Sign In</button><br>
         <button id='googlelogin'>Sign in with google</button>
     </div>
+
+    <!--<div id='signUpPage'>-->
+    <!--    <h3>Create Your Account</h3>-->
+    <!--<div id='loginPage'>-->
+    <!--    <h1>Welcome to US History</h1>-->
+    <!--    <br><br>-->
+    <!--    <p id='wrongUserPass'></p><br>-->
+    <!--    <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control"/><br>-->
+    <!--    <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control"/><br>-->
+    <!--    <button id='signIn'>Sign In</button><br>-->
+    <!--    <button id='googlelogin'>Sign in with google</button>-->
+    <!--</div>-->
 
     <div id='signUpPage'>
         <h3>Create Your Account</h3>
@@ -306,6 +431,21 @@
 
     $("#googlelogin").click(function() {
         login()
+        window.location.hash = '#intro-1';
+        $('.logButton').hide()
+    });
+
+    function writeAgeData(firstName, lastName, username, password, email) {
+        //user.displayName
+        //user.email
+        //user.photoURL
+        //user.iud
+        console.log(user.displayName)
+        alert('You are logged in!')
+    }
+
+    $("#googlelogin").click(function() {
+        login()
     });
 
     function writeAgeData(firstName, lastName, username, password, email) {
@@ -315,7 +455,7 @@
             username: username,
             password: password,
             email: email
-        });
+        })
     }
 
     $("#signUpButton").click(function() {
@@ -333,6 +473,7 @@
         }
     });
 
+
     $("#signIn").click(function() {
         var userVal = $("#oldUser").val();
         var userValPass = $("#oldUserPass").val();
@@ -344,14 +485,21 @@
                     var objects = Object.values(childData)
                     console.log(objects)
 
+                    var userVal = $("#oldUser").val();
+                    var userValPass = $("#oldUserPass").val();
                     if (userVal == objects[4] && userValPass == objects[3]) {
-                        alert('youre logged in')
+                        window.location.hash = '#intro-1';
+                        $('.logButton').hide()
+                        userVal = $("#oldUser").val('');
+                        userValPass = $("#oldUserPass").val('');
+                        $("#wrongUserPass").text("");
                     }
                     else {
-                        $("#wrongUserPass").text("Wrong Username or Password");
+                        $("#wrongUserPass").text("wrong username or password");
                     }
                 });
             });
+
     });
 </script>
 
