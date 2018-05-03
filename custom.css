@@ -201,7 +201,7 @@ body {
 }
 
 #timeline img:hover + .centered{
-  display: block;
+  display: relative;
 }
 
 #timeline{
