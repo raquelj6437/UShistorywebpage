@@ -17,10 +17,10 @@
 
     <script>
         $(function() {
-            $('#intro-3').hide()
-            $('#intro-1').hide()
-            $('#intro-2').hide()
-            $('#signUpPage').hide()
+            // $('#intro-3').hide()
+            // $('#intro-1').hide()
+            // $('#intro-2').hide()
+            // $('#signUpPage').hide()
 
             $('.periods').hide()
 
@@ -306,6 +306,8 @@
 
     $("#googlelogin").click(function() {
         login()
+        window.location.hash = '#intro-1';
+        $('.logButton').hide()
     });
 
     function writeAgeData(firstName, lastName, username, password, email) {
@@ -345,7 +347,11 @@
                     console.log(objects)
 
                     if (userVal == objects[4] && userValPass == objects[3]) {
-                        alert('youre logged in')
+                        window.location.hash = '#intro-1';
+                        $('.logButton').hide()
+                        userVal = $("#oldUser").val(''); 
+                        userValPass = $("#oldUserPass").val('');
+                        $("#wrongUserPass").text("");
                     }
                     else {
                         $("#wrongUserPass").text("Wrong Username or Password");
