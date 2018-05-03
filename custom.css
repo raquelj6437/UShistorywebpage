@@ -1,129 +1,132 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Fauna+One');
-html, body {
-      width: 100%;
-      height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 
 }
 
-#intro-1{
+#intro-1 {
   display: table;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.1)
-  ),
-    url('images/homeimg.jpg') no-repeat center;
+  background: linear-gradient( rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.1)),
+  url('images/homeimg.jpg') no-repeat center;
   background-size: cover;
-  color:white;
+  color: white;
 }
 
 #intro-3 h4 {
-      font-family: 'Playfair Display', serif;
-      background: lightgray;
-      padding: 10px;
-      /*display: inline-block;*/
-      width: 500px;
-      /*margin: auto;*/
-    }
-    
-    #intro-3 h2 {
-      font-family: 'Playfair Display', serif;
-    }
-    
-    #intro-3 h3 {
-      font-family: 'Playfair Display', serif;
-    }
+  font-family: 'Playfair Display', serif;
+  background: lightgray;
+  padding: 10px;
+  /*display: inline-block;*/
+  width: 500px;
+  /*margin: auto;*/
+}
+
+#intro-3 h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+#intro-3 h3 {
+  font-family: 'Playfair Display', serif;
+}
 
 
 @media (min-width: 768px) {
-    #intro-1 {
-        font-size: 20px;
-        font-family: 'Playfair Display', serif;
-    }
-    
-    #intro-3 h4 {
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
-      width: 350px;
-    }
-    
-    #intro-3 h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 30px;
-    }
-    
-    #intro-3 h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 25px;
-      margin-bottom: 20px;
-    }
+  #intro-1 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  #intro-3 h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    width: 350px;
+  }
+
+  #intro-3 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+  }
+
+  #intro-3 h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
 }
 
- 
+
 @media (min-width: 992px) {
-    #intro-1 {
-        font-size: 30px;
-        font-family: 'Playfair Display', serif;
-    }
-    
-    #intro-3 h4 {
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
-      width: 500px;
-    }
-    
-    #intro-3 h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 40px;
-    }
-    
-    #intro-3 h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
+  #intro-1 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  #intro-3 h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    width: 500px;
+  }
+
+  #intro-3 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+  }
+
+  #intro-3 h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
-    #intro-1 {
-        font-size: 40px;
-        font-family: 'Playfair Display', serif;
-    }
-    
-    #intro-3 h4 {
-      font-family: 'Playfair Display', serif;
-      font-size: 30px;
-      width: 500px;
-    }
-    
-    #intro-3 h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 50px;
-    }
-    
-    #intro-3 h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-}
- 
+  #intro-1 {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+  }
 
-#APReview, #regent{
+  #intro-3 h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    width: 500px;
+  }
+
+  #intro-3 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+  }
+
+  #intro-3 h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+
+#APReview,
+#regent {
   position: relative;
   left: 5%;
   right: 5%;
 }
 
 
-h2,h3,h4,h5 {
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Playfair Display', serif;
 }
 
 
-button{
+button {
   transition-duration: 1.2s;
   background-color: white;
 }
@@ -135,12 +138,12 @@ button{
   color: white;
 }
 
-.logButton{
+.logButton {
   background-color: white;
-  
+
 }
 
-.logButton:hover{
+.logButton:hover {
   background-color: lightgrey;
   border-color: white;
 }
@@ -149,8 +152,9 @@ body {
   background: #3b4262;
   color: #ffffff;
   font-family: 'Fauna One', serif;
-  
+
 }
+
 .item {
   display: flex;
   max-width: 1000px;
@@ -158,6 +162,7 @@ body {
 }
 
 /*timeline css*/
+
 .vl {
   border-left: 2px solid grey;
   height: 400px;
@@ -166,7 +171,7 @@ body {
   left: 55px;
 }
 
-#timeline img{
+#timeline img {
   width: 110px;
   height: 110px;
   display: block;
@@ -175,11 +180,11 @@ body {
   bottom: 10px;
 }
 
-#timeline img:hover{
+#timeline img:hover {
   filter: brightness(50%);
 }
 
-.timelineimg{
+.timelineimg {
   width: 110px;
   height: 110px;
   position: relative;
@@ -192,18 +197,18 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display:none;
+  display: none;
 }
 
-.centered:hover{
+.centered:hover {
   display: block;
 }
 
-#timeline img:hover + .centered{
+#timeline img:hover+.centered {
   display: block;
 }
 
-#timeline{
+#timeline {
   width: 130px;
   height: 450px;
   display: relative;
@@ -211,25 +216,33 @@ body {
   overflow: scroll;
 }
 
-#timelineTitle{
+#timelineTitle {
   font-size: 25px;
-  text-align:center;
+  text-align: center;
   border-bottom: 2px solid black;
 }
 
 /*.content {*/
+
 /*  width: 100%;*/
+
 /*  height: 100%;*/
-  /*margin: auto;*/
+
+/*margin: auto;*/
+
 /*}*/
 
 /*#regent-info {*/
-  /*margin: auto;*/
+
+/*margin: auto;*/
+
 /*  height: 100%;*/
+
 /*  width: 100%;*/
+
 /*}*/
 
-.periods{
+.periods {
   position: absolute;
   left: 140px;
   bottom: 70px;
@@ -237,32 +250,33 @@ body {
 }
 
 /*log in page css*/
-#loginPage{
+
+#loginPage {
   display: table;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    rgba(10,170,2000,0.5),
-    rgba(0,0,0,0.1)
-  );
+  background: linear-gradient( rgba(10, 170, 2000, 0.5),
+  rgba(0, 0, 0, 0.1));
   text-align: center;
 }
 
-#oldUser,#oldUserPass{
+#oldUser,
+#oldUserPass {
   text-align: center;
   width: 500px;
   margin: 0 auto;
   float: none;
 }
 
-td, th {
-    border: 2px solid #dddddd;
-    text-align: left;
-    padding: 10px;
+td,
+th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 10px;
 }
 
 caption {
-  font-size:20px;
+  font-size: 20px;
   color: black;
-  
+
 }

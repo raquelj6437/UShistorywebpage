@@ -17,11 +17,12 @@
 
     <script>
         $(function() {
-            // $('#intro-3').hide()
+            $('#intro-3').hide()
+            $('#loginPage').hide()
+            $('#intro-2').hide()
+            $('#signUpPage').hide()
             // $('#intro-1').hide()
-            // $('#intro-2').hide()
-            // $('#signUpPage').hide()
-                
+            
             $('.periods').hide()
 
             $(".timelineimg").click(function() {
@@ -32,6 +33,26 @@
                 console.log(value)
                 $('#period' + value).show()
             });
+            
+            $("#login").click(function() {
+                $('#loginPage').show()
+                $('#intro-1').hide()
+            });
+            
+            $("#signUp").click(function() {
+                $('#signUpPage').show()
+                $('#intro-1').hide()
+            });
+            
+            $("#APButton").click(function() {
+                $('#intro-2').show()
+                $('#intro-3').hide()
+            });
+            
+            $("#RegentButton").click(function() {
+                $('#intro-2').hide()
+                $('#intro-3').show()
+            });
         });
     </script>
 </head>
@@ -40,8 +61,8 @@
     <header id='intro-1'>
         <div id='heading' class="text-vertical-center">
             <h1>Welcome to US History</h1>
-            <a href='#APReview'><button type="button">AP Review</button></a>
-            <a href='#regent'><button type="button">Regents Review</button></a><br><br>
+            <a href='#APReview'><button type="button" id='APButton'>AP Review</button></a>
+            <a href='#regent'><button type="button" id='RegentButton'>Regents Review</button></a><br><br>
             <a href='#loginPage'><button type="button" class="logButton" id='login'>Login</button><br><br></a>
             <a href='#signUpPage'><button type="button" class="logButton" id='signUp'>Sign Up</button></a>
         </div>
@@ -465,7 +486,7 @@
                         $("#wrongUserPass").text("");
                     }
                     else {
-                        alert('wrong username or password')
+                        $("#wrongUserPass").text("wrong username or password");
                     }
                 });
             });
