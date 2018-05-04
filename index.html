@@ -17,7 +17,6 @@
 
     <script>
         $(function() {
-            $('#intro-3').hide()
             $('#loginPage').hide()
             $('#intro-2').hide()
             $('#signUpPage').hide()
@@ -42,16 +41,11 @@
             $("#signUp").click(function() {
                 $('#signUpPage').show()
                 $('#intro-1').hide()
+                $('#intro-2').hide()
             });
 
             $("#APButton").click(function() {
                 $('#intro-2').show()
-                $('#intro-3').hide()
-            });
-
-            $("#RegentButton").click(function() {
-                $('#intro-2').hide()
-                $('#intro-3').show()
             });
         });
     </script>
@@ -61,8 +55,7 @@
     <header id='intro-1'>
         <div id='heading' class="text-vertical-center">
             <h1>Welcome to US History</h1>
-            <a href='#APReview'><button type="button" id='APButton'>AP Review</button></a>
-            <a href='#regent'><button type="button" id='RegentButton'>Regents Review</button></a><br><br>
+            <a href='#APReview'><button type="button" id='APButton'>AP Review</button></a><br><br>
             <a href='#loginPage'><button type="button" class="logButton" id='login'>Login</button><br><br></a>
             <a href='#signUpPage'><button type="button" class="logButton" id='signUp'>Sign Up</button></a>
         </div>
@@ -350,96 +343,6 @@
                     <p>Key Concept 8.1: The United States responded to an uncertain and unstable postwar world by asserting and working to maintain a position of global leadership, with far-reaching domestic and international consequences.
                         <br><br> Key Concept 8.2: New movements for civil rights and liberal efforts to expand the role of government generated a range of political and cultural responses.
                         <br><br> Key Concept 8.3: Postwar economic and demographic changes had far-reaching consequences for American society, politics, and culture.</p>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <header id="intro-3">
-        <div id="regent">
-            <h2>
-                <bold>US History Regents Review</bold>
-            </h2>
-            <h3>
-                <bold>Everything you need to know to ACE your regents.</bold>
-            </h3>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 1: Colonial America</h4>
-                    <p></p>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 2: American Revolution</h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 3: Building a Nation, Sectionalism and the Civil War</h4>
-                    <p></p>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 4: Reconstruction </h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 5: The Gilded Age and Progressive Era</h4>
-                    <p></p>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 6: Rise of American Power</h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 7: Propserity and Depression</h4>
-                    <p></p>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 8: World War II</h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 9: Cold War</h4>
-                    <p></p>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Unit 10: Domestic Change</h4>
-                    <p></p>
-                </div>
-            </div>
-
-            <div id='timeline'>
-                <p id='timelineTitle'>Timeline</p>
-                <div class="vl"></div>
-                <div class='unitTimelineimg'>
-                    <img id="unit1Image" src="images/timeline/period1.jpg" alt="Unit 1" class="img-circle">
-                    <p class="centered">Unit 1</p>
-                </div>
-                <div class='unitTimelineimg'>
-                    <img id="unit2Image" src="images/timeline/period2.jpg" alt="Unit 2" class="img-circle">
-                    <p class="centered">Unit 2</p>
-                </div>
-                <div class='unitTimelineimg'>
-                    <img id="unit3Image" src="images/timeline/period2.jpg" alt="Unit 3" class="img-circle">
-                    <p class="centered">Unit 3</p>
-                </div>
-                <div class='unitTimelineimg'>
-                    <img id="unit4Image" src="images/timeline/period2.jpg" alt="Unit 4" class="img-circle">
-                    <p class="centered">Unit 4</p>
-                </div>
-                <div class='unitTimelineimg'>
-                    <img id="unit5Image" src="images/timeline/period2.jpg" alt="Unit 5" class="img-circle">
-                    <p class="centered">Unit 5</p>
-                </div>
-                <div class='unitTimelineimg'>
-                    <img id="unit6Image" src="images/timeline/period2.jpg" alt="Unit 6" class="img-circle">
-                    <p class="centered">Unit 6</p>
                 </div>
             </div>
         </div>
