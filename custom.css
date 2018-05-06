@@ -144,6 +144,7 @@ button {
   transition-duration: 1.2s;
   background-color: white;
   border-radius: 10px;
+  border:none;
 }
 
 .text-vertical-center {
