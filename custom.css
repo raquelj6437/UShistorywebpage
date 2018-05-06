@@ -11,7 +11,7 @@ body {
   display: table;
   width: 100%;
   height: 100%;
-  background: linear-gradient( rgba(0, 0, 0, 0.5),
+  background: linear-gradient( rgba(0, 0, 0, 0.9),
   rgba(0, 0, 0, 0.1)),
   url('images/homeimg.jpg') no-repeat center;
   background-size: cover;
@@ -203,7 +203,7 @@ body {
   height: 110px;
   position: relative;
   text-align: center;
-  float:left;
+  float: left;
 }
 
 .centered {
@@ -260,4 +260,8 @@ th {
 caption {
   font-size: 20px;
   color: black;
+}
+
+#name{
+  text-decoration: underline;
 }

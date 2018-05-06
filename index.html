@@ -20,7 +20,7 @@
             $('#loginPage').hide()
             // $('#intro-2').hide()
             $('#signUpPage').hide()
-            $('#intro-1').hide()
+            // $('#intro-1').hide()
 
             $('.periods').hide()
 
@@ -54,14 +54,14 @@
 <body>
     <header id='intro-1'>
         <div id='heading' class="text-vertical-center">
-            <h1>Welcome to US History</h1>
+            <h1>Welcome <span id='name'></span> to US History</h1><br>
             <a href='#APReview'><button type="button" id='APButton'>AP Review</button></a><br><br>
             <a href='#loginPage'><button type="button" class="logButton" id='login'>Login</button><br><br></a>
             <a href='#signUpPage'><button type="button" class="logButton" id='signUp'>Sign Up</button></a>
         </div>
     </header>
 
-    <header id='intro-2' class=''>
+    <header id='intro-2'>
         <div id='APReview'>
             <h3>AP US History Review</h3>
             <h4>Everything you need to know to ACE your AP exam.</h4>
@@ -411,28 +411,22 @@
         //user.email
         //user.photoURL
         //user.iud
-        console.log(user.displayName)
-        alert('You are logged in!')
+        alert(user.displayName+ ' you are logged in!')
+        window.location.hash = '#intro-1';
+        
+        $("#name").text(user.displayName)
+        // $("#image").attr("src",user.photoURL)
     }
 
     $("#googlelogin").click(function() {
         login()
-        window.location.hash = '#intro-1';
         $('.logButton').hide()
         $('#intro-1').show()
         $('#loginPage').hide()
+        $('#signUpPage').hide()
     });
 
-    function writeAgeData(firstName, lastName, username, password, email) {
-        //user.displayName
-        //user.email
-        //user.photoURL
-        //user.iud
-        console.log(user.displayName)
-        alert('You are logged in!')
-    }
-
-    function writeAgeData(firstName, lastName, username, password, email) {
+    function writeUserData(firstName, lastName, username, password, email) {
         firebase.database().ref('user/').push().set({
             firstName: firstName,
             lastName: lastName,
@@ -450,7 +444,7 @@
         var email = $("#email").val();
 
         if (firstName == !'' && lastName == !'' && username == !'' && password == !'' && email == !'') {
-            writeAgeData(firstName, lastName, username, password, email)
+            writeUserData(firstName, lastName, username, password, email)
         }
         else {
             alert('please fill in everything')
