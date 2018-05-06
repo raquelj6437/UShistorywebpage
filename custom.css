@@ -136,6 +136,9 @@ h5 {
   font-family: 'Playfair Display', serif;
 }
 
+li, p {
+  font-family: 'Fauna One', serif
+}
 
 button {
   transition-duration: 1.2s;
