@@ -22,48 +22,12 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-#intro-3 h4 {
-  font-family: 'Playfair Display', serif;
-  background: lightgray;
-  padding: 10px;
-  /*display: inline-block;*/
-  width: 500px;
-  /*margin: auto;*/
-}
-
-#intro-3 h2 {
-  font-family: 'Playfair Display', serif;
-}
-
-#intro-3 h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-
 @media (min-width: 768px) {
   #intro-1 {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
   }
-
-  #intro-3 h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    width: 350px;
-  }
-
-  #intro-3 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-  }
-
-  #intro-3 h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
 }
-
 
 @media (min-width: 992px) {
   #intro-1 {
@@ -74,23 +38,6 @@ body {
    #intro-1 h1 {
   font-size: 50px;
 }
-
-  #intro-3 h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    width: 500px;
-  }
-
-  #intro-3 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-  }
-
-  #intro-3 h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -101,23 +48,6 @@ body {
   #intro-1 h1 {
   font-size: 70px;
 }
-
-  #intro-3 h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    width: 500px;
-  }
-
-  #intro-3 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
-  }
-
-  #intro-3 h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
 }
 
 
@@ -266,6 +196,12 @@ caption {
   color: black;
 }
 
-#name{
-  text-decoration: underline;
+#comment{
+  float: left;
+  width: 100%;
+  text-align: left;
 }
+
+/*.name{*/
+/*  text-decoration: underline;*/
+/*}*/
