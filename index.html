@@ -20,8 +20,8 @@
             // $('#loginPage').hide()
             $('#intro-2').hide()
             $('#signUpPage').hide()
-            // $('#intro-1').hide()
-
+            $('#intro-1').hide()
+            $('#commentsection').hide()
             $('.periods').hide()
 
             $(".timelineimg").click(function() {
@@ -665,9 +665,9 @@
         <input type="text" placeholder='type a comment...' id='comment' class="form-control" /><br><br>
         <input type="submit" class="btn btn-info" value="Submit" id='commentSubmit'>
         
-        <div class="panel panel-default">
-          <div class="panel-heading">Panel Heading</div>
-          <div class="panel-body">Panel Content</div>
+        <div class="panel panel-default" id='newComment'>
+          <div class="panel-heading" id='username'></div>
+          <div class="panel-body" id='userComment'></div>
         </div>
     </div>
     <div id='loginPage'>
@@ -742,6 +742,8 @@
             
             writeCommentData(comment,username)
         });
+        
+        $('#commentsection').show()
     }
 
     $("#googlelogin").click(function() {
@@ -759,16 +761,33 @@
         })
     }
     
-    // window.setInterval(function(){
-      var query = firebase.database().ref('comment/').orderByKey();
+    function appendComment(){
+        var query = firebase.database().ref('comment/').orderByKey();
           query.once("value")
             .then(function(snapshot) {
               snapshot.forEach(function(childSnapshot) { 
                 var childData = childSnapshot.val();
                 var objects = Object.values(childData)
                 console.log(objects)
+                
+                $("#newComment:last").before("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>")
+                
+                $("#username").append(objects[1])
+                $("#userComment").append(objects[0])
             });
           });
+    }
+    
+    $("#commentSubmit").click(function() {
+        $('#newComment').remove()
+        appendComment()
+        });
+        
+        appendComment()
+          
+    // window.setInterval(function(){
+    //     $('#newComment').remove()
+    //     appendComment()
     // }, 5000);
     
     // function writeUserData(firstName, lastName, username, password, email) {
