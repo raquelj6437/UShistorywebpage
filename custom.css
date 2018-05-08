@@ -194,11 +194,6 @@ th {
   padding: 10px;
 }
 
-caption {
-  font-size: 20px;
-  color: black;
-}
-
 #comment{
   float: left;
   width: 100%;
@@ -208,3 +203,8 @@ caption {
 /*.name{*/
 /*  text-decoration: underline;*/
 /*}*/
+
+#period5 table {
+  font-size: 17px;
+  font-family: 'Playfair Display', serif;
+}
