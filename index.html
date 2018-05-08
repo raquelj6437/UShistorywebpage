@@ -18,9 +18,9 @@
     <script>
         $(function() {
             // $('#loginPage').hide()
-            //$('#intro-2').hide()
-            //$('#signUpPage').hide()
-            // $('#intro-1').hide()
+            $('#intro-2').hide()
+            $('#signUpPage').hide()
+            $('#intro-1').hide()
 
             $('.periods').hide()
 
@@ -1291,11 +1291,14 @@
         <div class="panel-heading"><span class='name'></span> :</div>
         <input type="text" placeholder='type a comment...' id='comment' class="form-control" /><br><br>
         <input type="submit" class="btn btn-info" value="Submit" id='commentSubmit'>
-
+    <div class='commentRemove'>
         <div class="panel panel-default" id='newComment'>
           <div class="panel-heading" id='username'></div>
           <div class="panel-body" id='userComment'></div>
         </div>
+    </div>
+    </div>
+        
     <div id='loginPage'>
         <h1>Welcome to US History</h1>
         <br><br>
@@ -1304,6 +1307,7 @@
         <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control" /><br>
         <button id='signIn'>Sign In</button><br><br>
         <button id='googlelogin'>Sign in with google</button>
+        <button id='logout'>Log Out</button>
     </div>
 
     <!--<div id='signUpPage'>-->
@@ -1347,7 +1351,6 @@
         auth.onAuthStateChanged(newLogin);
     }
 
-    // var username
     function app(user) {
         var username = user.displayName
         console.log(username)
@@ -1376,9 +1379,18 @@
         login()
         $('.logButton').hide()
         $('#intro-1').show()
-        $('#loginPage').hide()
+        // $('#loginPage').hide()
         $('#signUpPage').hide()
     });
+    
+    $("#logout").click(function() {
+        firebase.auth().signOut().then(function() {
+      // Sign-out successful.
+    }, function(error) {
+      // An error happened.
+    });
+    });
+    
 
     function writeCommentData(comment, username) {
         firebase.database().ref('comment/').push().set({
@@ -1388,6 +1400,7 @@
     }
 
     
+    var count = 0
     function appendComment(){
         var query = firebase.database().ref('comment/').orderByKey();
           query.once("value")
@@ -1397,7 +1410,7 @@
                 var objects = Object.values(childData)
                 console.log(objects)
                 
-                $("#newComment:last").before("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>")
+                $('.commentRemove:last').prepend($("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>"));
                 
                 $("#username").append(objects[1])
                 $("#userComment").append(objects[0])
@@ -1406,7 +1419,7 @@
     }
     
     $("#commentSubmit").click(function() {
-        $('#newComment').remove()
+        $('.commentRemove').empty()
         appendComment()
         });
         
