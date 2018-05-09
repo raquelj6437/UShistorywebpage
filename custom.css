@@ -89,7 +89,6 @@ button {
 
 .logButton {
   background-color: white;
-
 }
 
 .logButton:hover {
@@ -207,4 +206,8 @@ th {
 #period5 table {
   font-size: 17px;
   font-family: 'Playfair Display', serif;
+}
+
+#logout{
+  color: blue;
 }
