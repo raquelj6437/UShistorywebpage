@@ -1300,25 +1300,25 @@
         </div>
     </header>
 
-<div id='commentsection'>
-    <div class="dropdown">
-    <button id='commentButton' class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Comment Section
+    <div id='commentsection'>
+        <div class="dropdown">
+            <button id='commentButton' class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Comment Section
     <span class="caret"></span></button>
-    <div class="dropdown-menu">
-        <div class='container'>
-        <div class="panel-heading"><span class='name'></span> :</div>
-        <input type="text" placeholder='type a comment...' id='comment' class="form-control" />
-        <input type="submit" class="btn btn-info" value="Submit" id='commentSubmit'><br><br>
-        <div class='commentRemove'><br>
-            <div class="panel panel-default" id='newComment'>
-                <div class="panel-heading" id='username'></div>
-                <div class="panel-body" id='userComment'></div>
+            <div class="dropdown-menu">
+                <div class='container'>
+                    <div class="panel-heading"><span class='name'></span> :</div>
+                    <input type="text" placeholder='type a comment...' id='comment' class="form-control" />
+                    <input type="submit" class="btn btn-info" value="Submit" id='commentSubmit'><br><br>
+                    <div class='commentRemove'><br>
+                        <div class="panel panel-default" id='newComment'>
+                            <div class="panel-heading" id='username'></div>
+                            <div class="panel-body" id='userComment'></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-</div>
-</div>
 
     <div id='loginPage'>
         <h1>Welcome to US History</h1>
@@ -1443,10 +1443,10 @@
     $("#commentSubmit").click(function() {
         appendComment()
     });
-    
+
     appendComment()
 
-    window.setInterval(function(){
+    window.setInterval(function() {
         appendComment()
     }, 5000);
 
