@@ -17,14 +17,10 @@
 
     <script>
         $(function() {
-            $('#loginPage').hide()
-            $('#intro-2').hide()
-            $('#signUpPage').hide()
+            // $('#loginPage').hide()
+            //$('#intro-2').hide()
+            //$('#signUpPage').hide()
             // $('#intro-1').hide()
-            $('#commentsection').hide()
-            
-            $('#logout').show()
-
 
             $('.periods').hide()
 
@@ -40,22 +36,16 @@
             $("#login").click(function() {
                 $('#loginPage').show()
                 $('#intro-1').hide()
-                $('#intro-2').show()
             });
 
-            // $("#signUp").click(function() {
-            //     $('#signUpPage').show()
-            //     $('#intro-1').hide()
-            //     $('#intro-2').hide()
-            // });
+            $("#signUp").click(function() {
+                $('#signUpPage').show()
+                $('#intro-1').hide()
+                $('#intro-2').hide()
+            });
 
             $("#APButton").click(function() {
                 $('#intro-2').show()
-            });
-
-            $("#logout").click(function() {
-                $('#login').show()
-                $('#commentsection').hide()
             });
         });
     </script>
@@ -68,48 +58,47 @@
             <a href='#APReview'><button type="button" id='APButton'>AP Review</button></a><br><br>
             <a href='#loginPage'><button type="button" class="logButton" id='login'>Login</button><br><br></a>
             <!--<a href='#signUpPage'><button type="button" class="logButton" id='signUp'>Sign Up</button></a>-->
-            <a><button id='logout'>Log Out</button></a>
         </div>
     </header>
 
-    <header id='intro-2' class='container'>
+    <header id='intro-2'>
         <div id='APReview'>
             <h3>AP US History Review</h3>
             <h4>Everything you need to know to ACE your AP exam.</h4>
-            <div id='timeline' class='container'>
+            <div id='timeline'>
                 <p id='timelineTitle'>Timeline</p>
                 <div class="vl"></div>
                 <div class='timelineimg' id='period1Image'>
                     <img src="images/timeline/period1.jpg" alt="Period 1" class="img-circle">
-                    <p class="centered"><u>Period 1</u> <br>(1491 – 1607)</p>
+                    <p class="centered">Period 1</p>
                 </div>
                 <div class='timelineimg' id="period2Image">
                     <img src="images/timeline/period2.jpg" alt="Period 2" class="img-circle">
-                    <p class="centered"><u>Period 2 </u><br> (1607-1754)</p>
+                    <p class="centered">Period 2</p>
                 </div>
                 <div class='timelineimg' id="period3Image">
-                    <img src="images/timeline/period3.jpg" alt="Period 3" class="img-circle">
-                    <p class="centered"><u>Period 3</u> <br> (1754-1800)</p>
+                    <img src="images/timeline/period2.jpg" alt="Period 3" class="img-circle">
+                    <p class="centered">Period 3</p>
                 </div>
                 <div class='timelineimg' id="period4Image">
-                    <img src="images/timeline/period4.jpg" alt="Period 4" class="img-circle">
-                    <p class="centered"><u>Period 4 </u><br> (1800-1848)</p>
+                    <img src="images/timeline/period2.jpg" alt="Period 4" class="img-circle">
+                    <p class="centered">Period 4</p>
                 </div>
                 <div class='timelineimg' id="period5Image">
-                    <img src="images/timeline/period5.jpg" alt="Period 5" class="img-circle">
-                    <p class="centered"><u>Period 5 </u><br>(1844-1877)</p>
+                    <img src="images/timeline/period2.jpg" alt="Period 5" class="img-circle">
+                    <p class="centered">Period 5</p>
                 </div>
                 <div class='timelineimg' id="period6Image">
-                    <img src="images/timeline/period6.jpg" alt="Period 6" class="img-circle">
-                    <p class="centered"><u>Period 6 </u><br>(1865-1898) </p>
+                    <img src="images/timeline/period2.jpg" alt="Period 6" class="img-circle">
+                    <p class="centered">Period 6</p>
                 </div>
                 <div class='timelineimg' id="period7Image">
-                    <img src="images/timeline/period7.jpg" alt="Period 7" class="img-circle">
-                    <p class="centered"><u>Period 7 </u><br>(1890–1945) </p>
+                    <img src="images/timeline/period2.jpg" alt="Period 7" class="img-circle">
+                    <p class="centered">Period 7</p>
                 </div>
                 <div class='timelineimg' id="period8Image">
-                    <img src="images/timeline/period8.jpg" alt="Period 8" class="img-circle">
-                    <p class="centered"><u>Period 8</u> <br> (1945-1980) </p>
+                    <img src="images/timeline/period2.jpg" alt="Period 8" class="img-circle">
+                    <p class="centered">Period 8</p>
                 </div>
             </div>
 
@@ -135,312 +124,10 @@
                                 <h4>Key Concept 1.2</h4>
                             </div>
                             <div class="panel-body" id="concept">
-                                <p>Contact among Europeans, Native Americans, and Africans resulted in the Columbian Exchange and significant social, cultural, and political changes on both sides of the Atlantic Ocean.</p>
+                                <p>As native populations migrated and settled across the vast expanse of North America over time, they developed distinct and increasingly complex societies by adapting to and transforming their diverse environments.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Pueblo</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>A name for the Native Americans of the present-day southwest United States. Pueblos were also apartment-like structures made of adobe and mud that formed the "towns" of the Pueblo people.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Chinook</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p> Native Americans living in the Pacific Northwest of the present-day United States. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Iroquois</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Native Americans living in the presen-day northeastern United States.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Alonquin</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Native Americans found living over a large area from the Atlantic coast to the Great Lakes.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Smallpox</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Infectious disease brought to America by the Spanish that killed large portions of the native populations.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Zambo</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>A term used in Spanish and Portugese colonies to describe someone of African and Native American ancestry.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Columbian Exchange</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>The exchange of people, plants, and animals between Europe, Africa, and North America that occured afer Columbus' arrival in the Western Hemisphere. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>House of Burgesses</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>- The House of Burgesses was the first representative assembly in the New World. The London Company authorized the settlers to select and summon this assembly.  It was the first of many miniature parliaments to sprout from the soil of America and was the beginning of self-rule in America</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Joint Stock Companies </h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>These were developed to gather the savings from the middle class to support finance colonies. Ex. London Company and Plymouth Company.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Spanish Armada</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>"Invincible" group of ships sent by King Philip II of Spain to invade England in 1588; Armada was defeated by smaller, more maneuverable English "sea dogs" in the Channel; marked the beginning of English naval dominance and fall of Spanish dominance.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Conquistadores</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Spanish explorers that invaded Central and South America for it's riches during the 1500's. In doing so they conquered the Incas, Aztecs, and other Native Americans of the area. Eventually they intermarried these tribes.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Renaissance</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>After the Middle Ages there was a rebirth of culture in Europe where art and science were developed. It was during this time of enrichment that America was discovered.Renaissance</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Montezuma</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Aztec chieftan; encountered Cortes and the Spanish and saw that they rode horses; Montezuma assumed that the Soanush were gods. He welcomed them hospitably, but the explorers soon turned on the natives and ruled them for three centuries.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Christopher Columbus</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>An Italian navigator who was funded by the Spanish Government to find a passage to the Far East. He is given credit for discovering the "New World," even though at his death he believed he had made it to India. He made four voyages to the "New World." The first sighting of land was on October 12, 1492, and three other journies until the time of his death in 1503.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Hernan Cortes</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>He was a Spanish explorer who conquered the Native American civilization of the Aztecs in 1519 in what is now Mexico.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Treaty of Tordesillas</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>In 1494 Spain and Portugal were disputing the lands of the new world, so the Spanish went to the Pope, and he divided the land of South America for them. Spain got the vast majority, the west, and Portugal got the east.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Marco Polo</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Italian explorer; spent many years in China or near it; his return to Europe in 1295 sparked a European interest in finding a quicker route to Asia.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Virginia Company</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>A joint-stock company: based in Virginia in 1607: founded to find gold and a water way to the Indies: confirmed all Englishmen that they would have the same life in the New World, as they had in England, with the same rights: 3 of their ships transported the people that would found Jamestown in 1607.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Iroquois Confederacy</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>The Iroquois Confederacy was nearly a military power consisting of Mohawks, Oneidas, Cayugas, and Senecas.IT was founded in the late 1500s.The leaders were Degana Widah and Hiawatha. The Indians lived in log houses with relatives. Men dominated, but a person's background was determined by the women's family. Different groups banded together but were separate fur traders and fur suppliers. Other groups joined; they would ally with either the French or the English depending on which would be the most to their advantage.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Squatter</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>A person who settles on land without title or right: Early settlers in North Carolina became squatters when they put their small farms on the new land. They raised tobacco on the land that they claimed, and tobacco later became a major cash crop for North Carolina.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Indentured Servitude</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Indentured servants were Englishmen who were outcasts of their country, would work in the Americas for a certain amount of time as servants.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Act of Toleration</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>A legal document that allowed all Christian religions in Maryland. Protestants invaded the Catholics in 1649 around Maryland: protected the Catholics religion from Protestant rage of sharing the land: Maryland became the #1 colony to shelter Catholics in the New World.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Hunter Gatherer</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p> A member of a group of people who subsist by hunting, fishing, or foraging in the wild.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Caste System</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>A  set of rigid social categories that determined not only a person's occupation and economic potential, but also his or her position in society</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Encomienda System</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Spanish government's policy to "commend", or give, Indians to certain colonists in return for the promise to Christianize them. Part of a broader Spanish effort to subdue Indian tribes in the West Indies and on the North American mainland.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Bartolome de las Casas</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Spanish missionary who was appalled by the encomienda system in Hispaniola and called it "a moral pestilence invented by Satan"</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Spanish Mission System</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>The mission system was a chain of missions estalbished by Franciscan monks in the Spanish Southwest and California that forced Indians to convert to Catholicism and work as agricultural laborers</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Maroon Communities</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Communities established by freed or runaway slaves</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Asiento System</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Required the Spanish to pay a tax to their king on each slave they imported to the Americas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4></h4>
-                            </div>
-                            <div class="panel-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
 
@@ -475,81 +162,11 @@
                         <div class="panel-heading">
                             <h4>Key Concept 2.3</h4>
                         </div>
-                        <div class="panel-body" id="concept">
+                        <div class="panel-body">
                             <p>European colonization efforts in North America stimulated intercultural contact and intensified conflict between the various groups of colonizers and native peoples.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Starving time</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>The winter of 1609 to 1610 was known as the "starving time" to the colonists of Virginia. Only sixty members of the original four-hundred colonists survived. The rest died of starvation because they did not possess the skills that were necessary to obtain food in the new world.starving time</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4></h4>
-                            </div>
-                            <div class="panel-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4></h4>
-                            </div>
-                            <div class="panel-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4></h4>
-                            </div>
-                            <div class="panel-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4></h4>
-                            </div>
-                            <div class="panel-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4></h4>
-                            </div>
-                            <div class="panel-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4></h4>
-                            </div>
-                            <div class="panel-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
             </div>
 
             <div id='period3' class='periods'>
@@ -587,7 +204,6 @@
                         </div>
                     </div>
                 </div>
-                <h1>Vocabulary</h1>
                 <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -784,7 +400,6 @@
                         </div>
                     </div>
                 </div>
-                <h1>Vocabulary</h1>
                 <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -1198,7 +813,6 @@
                         </div>
                     </div>
                 </div>
-                <h1>Vocabulary</h1>
                 <table id="civilwar">
                     <h3>Key Events and Battles of the Civil War</h3>
                     <tr>
@@ -1229,6 +843,1037 @@
                         <td>Lincoln inaugurated</td>
                         <td>March 1861</td>
                         <td>Washington, D.C.</td>
+                        <td>Lincoln enters Washington D.C. in disguise because of unrest. Southerners begin seizing federal posts.</td>
+                    </tr>
+                    <tr>
+                        <td>Ft. Sumter attacked</td>
+                        <td>April 1861</td>
+                        <td>Charleston, SC</td>
+                        <td>Lincoln decides to supply Ft. Sumter, but wants the South to fire the first shot.</td>
+                    </tr>
+                    <tr>
+                        <td>Bull Run (Manassas), 1st battle</td>
+                        <td>July 21, 1861</td>
+                        <td>Northern Virginia</td>
+                        <td>Gen. McDowell leads 30,000 men against Gen. Johnston's 22,000 Southern troops in an attempt to crush the rebels and go "On to Richmond." South scores victory as Union troops flee back to Washington in disarray. McDowell replaced
+                            by Gen. McClellan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ft. Henry & Ft. Donelson</td>
+                        <td>February 1862</td>
+                        <td>Tennessee rivers</td>
+                        <td>Gen. Grant captures two forts on the Tennessee and Cumberland Rivers. Confederates forced out of Kentucky and yield much of Tennessee</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor vs. Merrimac</td>
+                        <td>March 1862</td>
+                        <td>Off Hampton Roads, Virginia</td>
+                        <td>First ironclad battle in history ends in a draw as the Merrimac withdraws after daylong exchange of fire. Union blockade of South is maintained</td>
+                    </tr>
+                    <tr>
+                        <td>Shiloh (Pittsburgh Landing)</td>
+                        <td>April 1862</td>
+                        <td>Tennessee</td>
+                        <td>Grant overcomes Southern forces with heavy losses for each side: 13,000 Union casualties, 11,000 for South</td>
+                    </tr>
+                    <tr>
+                        <td>New Orleans</td>
+                        <td>April 1862</td>
+                        <td>Louisiana</td>
+                        <td>Farragut seizes New Orleans for Union after boldly attacking Southern position. 11 Southern ships sunk</td>
+                    </tr>
+                    <tr>
+                        <td>Peninsular Campaign (Yorktown, Seven Days' Battle, Fair Oaks)</td>
+                        <td>March-July 1862</td>
+                        <td>Southern Virginia</td>
+                        <td>After continual prodding by Lincoln, McClellan decides to attack Richmond via the South. He moves his large army down the Potomac, marches on Richmond, and then assumes a defensive position rather than pushing for victory. Gen.
+                            Lee takes command of Southern troops</td>
+                    </tr>
+                    <tr>
+                        <td>Bull Run (Manassas) 2nd battle</td>
+                        <td>August 1862</td>
+                        <td>Northern Virginia</td>
+                        <td>McClellan replaced by Gen. Pope. Lee and Gen. Stonewall Jackson defeat Union troops again at Manassas and Pope is replaced by McClellan</td>
+                    </tr>
+                    <tr>
+                        <td>Antietam</td>
+                        <td>September 1862</td>
+                        <td>Maryland</td>
+                        <td>Heavily outnumbered, Lee's troops face McClellan in bloody fighting. Over 23,000 casualties (more than all previous American wars combined). Lee retreats to Virginia</td>
+                    </tr>
+                    <tr>
+                        <td>Emancipation Proclamation</td>
+                        <td>September 23, 1862</td>
+                        <td>Washington, D.C.</td>
+                        <td>With victory at Antietam, Lincoln announces that on 1/1/63, all slaves in the rebelling states would be free. Does not affect border states. Forces European nations to recognize that choosing sides in the Civil War is to take a
+                            stand on slavery</td>
+                    </tr>
+                    <tr>
+                        <td>Fredericksburg</td>
+                        <td>December 1862</td>
+                        <td>Central Virginia</td>
+                        <td>Gen. Burnside attacks Lee's fortified position and suffers 10,000 casualties (to Lee's 5000).</td>
+                    </tr>
+                    <tr>
+                        <td>Chancellorsville</td>
+                        <td>May 1863</td>
+                        <td>Northern Virginia</td>
+                        <td>Gen. Hooker defeated by Lee, but Jackson is mistakenly shot by his own men and killed.</td>
+                    </tr>
+                    <tr>
+                        <td>Vicksburg</td>
+                        <td>July 1863</td>
+                        <td>Mississippi</td>
+                        <td>After a long siege, Vicksburg surrenders to Grant. All of Mississippi River is now in Union control</td>
+                    </tr>
+                    <tr>
+                        <td>Gettysburg</td>
+                        <td>July 1863</td>
+                        <td>Pennsylvania</td>
+                        <td>Over 165,000 soldiers participate in the largest battle in the Western Hemisphere. After three days of fighting, Lee retreats, leaving 4,000 dead Confederates. Total casualties: 23,000 Union, 28,000 Confederates</td>
+                    </tr>
+                    <tr>
+                        <td>Chattanooga</td>
+                        <td>November 1863</td>
+                        <td>Tennessee</td>
+                        <td>Reinforced with troops from the East, Grant is able to push Southern troops back and prepare for assault on Atlanta and the heart of the Confederacy</td>
+                    </tr>
+                    <tr>
+                        <td>Grant promoted to Lt. General and given command of all Union troops</td>
+                        <td>March 1864</td>
+                        <td>Washington D.C.</td>
+                        <td>Grant prepares for assault on Richmond. When Lincoln's Cabinet complains that Grant is a drunk and seeks to interfere with his command, Lincoln gives him unconditional support and asks not to notified of his plans.</td>
+                    </tr>
+                    <tr>
+                        <td>Wilderness & Spotsylvania</td>
+                        <td>May 1864</td>
+                        <td>Central Virgina</td>
+                        <td>Lee stops Union troops at the Wilderness, but Grant resumes march to Richmond. Though suffering huge losses (55,000 men to South's 31,000), Grant states "I propose to fight on this line if it takes all summer"</td>
+                    </tr>
+                    <tr>
+                        <td>Petersburg</td>
+                        <td>June 1864-April 1865</td>
+                        <td>South of Richmond, Virginia</td>
+                        <td>Grant focuses on important railroad junction and communication outside Richmond. Long siege of Petersburg begins with troops living in trenches which stretched for 50 miles
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlanta to Savannah</td>
+                        <td>September-December 1864</td>
+                        <td>Georgia</td>
+                        <td>Gen. Sherman destroys Atlanta and then sends troops on 300 mile destructive march to the sea. Railroads torn up, buildings destroyed, crops burned in an attempt to break the will of the South
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lee surrenders</td>
+                        <td>April 9, 1865</td>
+                        <td>Appomattox Court House, Virgina</td>
+                        <td>Lee, refusing to see his troops suffer any further, surrenders to Grant. Southern troops given generous terms of surrenders</td>
+                    </tr>
+                    <!--<p>Source: http://home.earthlink.net/~gfeldmeth/chart.civwar.html</p>-->
+                </table>
+            </div>
+
+            <div id='period6' class='periods'>
+                <h1>Period 6</h1>
+                <h3>(1865-1898)</h3>
+                <hr>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 6.1</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>Technological advances, large-scale production methods, and the opening of new markets encouraged the rise of industrial capitalism in the United States.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 6.2</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>The migrations that accompanied industrialization transformed both urban and rural areas of the United States and caused dramatic social and cultural change.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 6.3</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>The Gilded Age produced new cultural and intellectual movements, public reform efforts, and political debates over economic and social policies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Plains Indians</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Plains Indians were Native Americans that lived out in the west. They were called the Sioux, and they hunted buffalo and relied on horses which had been introduced to them by the Europeans.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Calfornios </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Californios were Hispanic residents of California. Many were Spanish or Mexican because of California’s former rule by those countries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Genizaros </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Genizaros were Indians without tribes, and they had become part of Spanish society. They were considered to be at the bottom of the social classes.</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Mestizos </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Mestizos were people of mixed race.</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Mulattoes </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Mulattoes were people of mixed race.</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Chinatowns </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Chinatowns developed in the west in which Chinese immigrants lived and worked in cities that would develop this name.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Coolies </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Coolies were Chinese laborers. Anti-Coolie Clubs were formed with the purpose of banning Chinese employment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> The Chinese Exclusion Act </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Chinese Exclusion Act was passed by Congress in 1882. It banned Chinese immigration and made it more difficult for people to become U.S. citizens.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> The Homestead Act </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Homestead Act was passed by Congress in 1862. It granted 160 acres of low cost land in return of the promise that people would live on the land and improve it for 5 years. This was not always beneficial because the land
+                                was sometimes dry and corporations would oftentimes commit fraud in order to gain land.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> The Transcontinental Railroad </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Transcontinental Railroad was completed in 1869. This was when the railroad that began in the east and the railroad that began in the west met in Utah. It helped connect the east and west, which benefited the economy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Rocky Mountain School</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Rocky Mountain School was similar to the Hudson River School in that they painted landscapes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Frederick Jackson Turner</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Frederick Jackson Turner wrote a famous piece of writing entitled The Significance of the Frontier in American History. He stressed the significance of the frontier.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> The Turner Thesis </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Turner Thesis stated that the frontier had a great impact on American history. Turner used the 1890 census data and argued that the frontier ended in 1890. He also posed the idea that the frontier gave America a unique
+                                identity and helped promote democracy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> The Sand Creek Massacre </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Sand Creek Massacre was a massacre of 133 Native Americans, 105 of which were women and children. Massacres of natives such as these often occurred during this time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Little Bighorn </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Little Bighorn was a battle between Native Americans and George Custer in which all 264 members of his regiment was killed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> George A. Custer </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>George A. Custer led a regiment of 264 men in the battle of Little Bighorn. During this battle, all soldiers in his army perished.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> The Cowboy </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                The Cowboy was romanticized by a book called The Virginian. People began to fall in love with the idea of an individual who was tough and rugged and making a name for himself out west.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> The Ghost Dance </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Ghost Dance was a ritual performed by Native Americans that was believed to make buffalo return and lead to the whites leaving the natives alone. This scared many people and even made the government want to end the dance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> Wounded Knee </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Wounded Knee occurred in 1890 in which there was fighting between soldiers and natives in South Dakota. 40 soldiers were killed and over 300 natives were killed, many of which were women and children.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4> The Dawes Severalty Act </h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Dawes Severalty Act was passed in 1887 that served the purpose of assimilating Native Americans into American culture and society. This was done so by eliminating tribal lands and providing 160 acres of land for individuals.
+                                SOme native children were also sent to boarding school. Another goal of the act was to promote Christianity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id='period7' class='periods'>
+                <h1>Period 7</h1>
+                <h3>(1890–1945)</h3>
+                <hr>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 7.1</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>Growth expanded opportunity, while economic instability led to new efforts to reform U.S. society and its economic system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 7.2</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>Innovations in communications and technology contributed to the growth of mass culture, while significant changes occurred in internal and international migration patterns.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 7.3</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>Participation in a series of global conflicts propelled the United States into a position of international power while renewing domestic debates over the nation’s proper role in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Yellow Journalism</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Newspaper practice of sensationalising the news to sell more papers. Joseph Pulitzer and William Randolph Hearst are assosciated because their newspapers pushed United States into war with Spain </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Assimilation</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Assimilation is the process of becoming “American”. Second generation immigrants were more likely to assimilate than first generation. This was often because public schools only taught in English, so they were forced to learn and speak the language.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The “City Beautiful” Movement</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The “City Beautiful” Movement developed in Chicago at the 1893 World’s Fair. It was inspired by Daniel Burnham and the goal was to impose order and symmetry on the disordered life and structure of cities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Tenements</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Tenements were houses in which immigrants often lived, and they became known as slum houses. These were located in cities and had poor living conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Jacob Riis</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Jacob Riis was a famous photographer who photographed tenement houses in NYC. It was entitled "How The Other Half Lives", and it exposed the poor conditions immigrants were living in.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Tammany Hall</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Tammany Hall was a political machine that provided jobs and assistance to constituents. It did so by giving groceries or money for rent. This gained loyalty for the political party.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>William M. Tweed</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>William M. Tweed, also known as “Boss” Tweed, stole about $200 million through fraud. He helped control elections and was ultimately captured.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Department Stores</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Department Stores began to develop such as Woolworth’s (dry goods store), Montgomery Ward and Sears Roebuck catalogs (mail-order catalogs), which helped farmers, and Macy’s. As a result, small businesses were affected and women began advocating for consumer protection and improvement in wages and working conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Movies</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Movies were silent until the 1920s, and provided leisure for people.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>D.W. Griffith</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>D.W. Griffith made the movie <em>The Birth of a Nation</em>, which glorified the KKK, making it seem like an appealing group.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Newspaper Chains</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Newspaper Chains began to grow during this time. This allowed for the creation of “yellow journalism”.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Social Realism</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Social Realism attempted to recreate the realities of urban social life through literature. This was often done through somber stories of the oppressed urban poor to draw attention to social injustices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Upton Sinclair</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Upton Sinclair wrote <em>The Jungle</em>, a book that exposed the horrors of the meatpacking industry. It aided in the passage of the Pure Food and Drug Act and the Meat Inspection Act.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Ashcan School</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Ashcan School was an art school that focused on artwork depicting urban life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Darwinism</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Darwinism, or the theory of evolution, challenged religion and schools at this time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Half-Breeds</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Half-Breeds were Republicans that favored reform in the government. They were led by James Blaine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Pendleton Act</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Pendleton Act was passed in 1883 and it required a civil service exam for federal government jobs. This limited patronage and was passed as a result of James Arthur’s assassination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Sherman Antitrust Act</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Sherman Antitrust Act was passed in 1890, and was supposed to break up monopolies. However, it actually broke up unions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>William McKinley</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>William McKinley became president in 1896. He was a Republican, and he created the McKinley Tariff (1890), which raised taxes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Interstate Commerce Act</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Interstate Commerce Act outlawed higher rates for short hauls for railroads and railroads had to publish their rates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Grange</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Grange provided social and economic opportunities for farmers. They sought to end monopolies in the railroad and wanted government ownership of businesses. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Populist Party</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Populist Party (People’s Party) incorporated the ideas of farmers. The Omaha Platform by Ignatius Donnelly advocated for: free and unlimited silver coinage at a ratio of 16:1; a gradual income tax; government ownership of the telephone, telegraph, and railroads; limiting government land grants to settlers over railroads; direct election of senators; and a postal savings bank.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Panic of 1893</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Panic of 1893 was caused by over speculation, stock-market crash, and overproduction. As a result of the panic, the government repeals the Sherman Silver Act.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Jacob Coxey</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Jacob Coxey led what was known as “Coxey’s Army”. They advocated for a public works program and marched a group of unemployed people to Washington, but were ultimately broken up by police.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>“Free Silver”</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>“Free Silver” was the idea of having silver to back the dollar at a ratio of 16:1. This would increase the money supply, helping farmers and debtors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>William Jennings Bryan</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>William Jennings Bryan won the Democratic nomination for presidency in 1896 and challenged McKinley. He ran for president three times, but was never elected. He advocated for lowering the tariff.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Imperialism</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Imperialism is the belief in conquering other countries to benefit your own country. The U.S. began to consider imperialism because manifest destiny was complete as a result of the frontier being “closed”. The White Man’s Burden encouraged imperialism, stating that it was the duty of the U.S. to civilize non-western areas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Alfred Thayer Mahan</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Alfred Thayer Mahan wrote a book called Influence of Sea Power. He argued that control of the sea was vital for world dominance. As a result, the U.S. and other countries began building up their navies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Hawaii</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Hawaii was attractive to the U.S. because it had large sugar production. The U.S. wanted to annex Hawaii and many farmers moved there to grow sugar. In 1890, the tariff exemption on Hawaii ended, resulting in high prices on imports. This hurt U.S. farmers that were living in Hawaii. Queen Liliuokalani believed that native Hawaiians should control the islands, but she was overthrown, and McKinley eventually signed the treaty to annex Hawaii.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Cuban Revolt</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Cuban Revolt occurred in 1895 when Cuba revolted against Spain. They followed a scorched-earth policy, meaning they destroy everything in order to hurt Spain economically. The U.S. was concerned because of investments and trade. The Spanish tried to crush the rebellion and the Spanish minister spoke negatively about McKinley. The USS Maine, stationed in Cuba, blew up and killed 260 sailers. This called for U.S. involvement in the war, so McKinley sent a message to Congress on April 11, 1898 urging war with Spain. The Teller Amendment promised Cubans that once the Spanish were overthrown, Cubans would gain their freedom. On August 12, 1898, an armistice was signed that ended the war. About 400 Americans died during battle and 5,000 died because of disease. America gained Guam, Cuba, and Puerto Rico as a result of the war. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Muckrakers</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Muckrakers were journalists who attempted to expose the evils of society and corruption. Famous muckrakers include Ida Tarbell, Lincoln Steffens, Upton Sinclair, and David G. Phillips.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Ida Tarbell</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Ida Tarbell published writings exposing the horrors of the Standard Oil Company.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Lincoln Steffens</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lincoln Steffens wrote The Shame of Cities, which exposed the corruption of municipal (city) government.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Social Gospel</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Social Gospel is a movement in Protestantism whose goal was to improve cities. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Settlement Houses</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Settlement Houses helped poor immigrants, women, and children adjust to American life. The most famous was the Hull House founded by Jane Addams in Chicago. These houses helped inspire the social work profession.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Jane Addams</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Jane Addams was a social worker who opened one the first and most famous settlement houses - the Hull House, which was located in Chicago. It was a model for more than 400 similar institutions throughout the nation. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Hull House</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Hull House was a settlement house opened by Jane Addams in Chicago. It was a model for more than 400 similar institutions throughout the nation. It was created to help poor immigrants, women, and children adjust to American life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Social Work</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Social Work came as a result of settlement houses. Mostly women held this profession because they were often excluded from other professions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Alice Paul</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Alice Paul advocated for women’s suffrage. She was radical for her time and authored the Equal Rights Amendment. This was not passed, but was a proposed amendment to the Constitution in favor of women’s rights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Referendum</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Referendum was a state-level voting reform in which final approval of laws would be provided by voters.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Robert La Follette</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Robert La Follette had an idea known as the Wisconsin Experiment. He focused on income taxes, initiatives, referendums, and regulated railroads and industries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Referendum</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Referendum was a state-level voting reform in which final approval of laws would be provided by voters.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The Triangle Shirtwaist Company Fire</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The Triangle Shirtwaist Company Fire occurred in a factory filled with women, children, and immigrants in a ten story building. Doors were locked from the outside, people smoked around gas engines, and there were narrow hallways, resulting in the deaths of 146 workers. There was a call for reform following this event.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>W.E.B. DuBois</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>W.E.B. DuBois did not think that Black Americans should try to assimilate into white culture. He believed in the “talented tenth”, which was the idea that the top 10% of Black Americans should have full access to education. He also helped form the Niagara Movement in Canada, which eventually morphed into the NAACP.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id='period8' class='periods'>
+                <h1>Period 8</h1>
+                <h3>(1945-1980)</h3>
+                <hr>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 8.1</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>The United States responded to an uncertain and unstable postwar world by asserting and working to maintain a position of global leadership, with far-reaching domestic and international consequences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 8.2</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>New movements for civil rights and liberal efforts to expand the role of government generated a range of political and cultural responses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Key Concept 8.3</h4>
+                        </div>
+                        <div class="panel-body" id="concept">
+                            <p>Postwar economic and demographic changes had far-reaching consequences for American society, politics, and culture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id='commentsection'>
+        <div class="dropdown">
+            <button id='commentButton' class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><a></a>Comment Section
+    <span class="caret"></span></button>
+            <div class="dropdown-menu">
+                <div class='container'>
+                    <div class="panel-heading"><span class='name'></span> :</div>
+                    <input type="text" placeholder='type a comment...' id='comment' class="form-control" />
+                    <input type="submit" class="btn btn-info" value="Submit" id='commentSubmit'><br><br>
+                    <div class='commentRemove'><br>
+                        <div class="panel panel-default" id='newComment'>
+                            <div class="panel-heading" id='username'></div>
+                            <div class="panel-body" id='userComment'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='loginPage'>
+        <h1>Welcome to US History</h1>
+        <br><br>
+        <p id='wrongUserPass'></p><br>
+        <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control" /><br>
+        <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control" /><br>
+        <button id='signIn'>Sign In</button><br><br>
+        <button id='googlelogin'>Sign in with google</button><br><br>
+    </div>
+
+    <!--<div id='signUpPage'>-->
+    <!--    <h3>Create Your Account</h3>-->
+    <!--    <input type="text" name="First Name" placeholder='First Name' id='firstName' class="form-control" /><br>-->
+    <!--    <input type="text" name="Last Name" placeholder='Last Name' id='lastName' class="form-control" /><br>-->
+    <!--    <input type="text" name="Username" placeholder='Username' id='username' class="form-control" /><br>-->
+    <!--    <input type="text" name="Password" placeholder='Password' id='password' class="form-control" /><br>-->
+    <!--    <input type="text" name="Email" placeholder='Email' id='email' class="form-control" /><br>-->
+    <!--    <button id='signUpButton'>Sign Up</button>-->
+    <!--</div>-->
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyD2DtL08N6-HfYbUA42CgaB_selDghvkyo",
+        authDomain: "us-history-1524785849679.firebaseapp.com",
+        databaseURL: "https://us-history-1524785849679.firebaseio.com",
+        projectId: "us-history-1524785849679",
+        storageBucket: "us-history-1524785849679.appspot.com",
+        messagingSenderId: "746157019230"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script>
+    function login() {
+        function newLogin(user) {
+            if (user) {
+                app(user);
+            }
+            else {
+                var provider = new firebase.auth.GoogleAuthProvider();
+                firebase.auth().signInWithRedirect(provider);
+            }
+        }
+        var auth = firebase.auth();
+        auth.onAuthStateChanged(newLogin);
+    }
+
+    function app(user) {
+        var username = user.displayName
+        console.log(username)
+        //user.displayName
+        //user.email
+        //user.photoURL
+        //user.iud
+        alert(user.displayName + ' you are logged in!')
+        window.location.hash = '#intro-1';
+
+        $(".name").text(user.displayName)
+        // $("#image").attr("src",user.photoURL)
+
+        $("#commentSubmit").click(function() {
+            var comment = $("#comment").val();
+            console.log(comment)
+            console.log(username)
+
+            writeCommentData(comment, username)
+        });
+    }
+
+    $("#googlelogin").click(function() {
+        login()
+        $('.logButton').hide()
+        $('#intro-1').show()
+        $('#commentsection').show()
+        // $('#loginPage').hide()
+        $('#signUpPage').hide()
+        $('#loginPage').hide()
+    });
+
+    $("#logout").click(function() {
+        firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+        }, function(error) {
+            // An error happened.
+        });
+    });
+
+
+    function writeCommentData(comment, username) {
+        firebase.database().ref('comment/').push().set({
+            comment: comment,
+            username: username
+        })
+    }
+
+
+    var count = 0
+
+    function appendComment() {
+        $('.commentRemove').empty()
+        var query = firebase.database().ref('comment/').orderByKey();
+        query.once("value")
+            .then(function(snapshot) {
+                snapshot.forEach(function(childSnapshot) {
+                    var childData = childSnapshot.val();
+                    var objects = Object.values(childData)
+                    console.log(objects)
+
+                    $('.commentRemove:last').prepend($("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>"));
+
+                    $("#username").append(objects[1])
+                    $("#userComment").append(objects[0])
+                });
+            });
+<<<<<<<<< saved version
                         <td>Lincoln enters Washington D.C. in disguise because of unrest. Southerners begin seizing federal posts.</td>
                     </tr>
                     <tr>
@@ -1840,6 +2485,10 @@
     window.setInterval(function() {
         appendComment()
     }, 5000);
+=========
+        });
+    // }, 5000);
+>>>>>>>>> local version
 
     // function writeUserData(firstName, lastName, username, password, email) {
     //     firebase.database().ref('user/').push().set({
