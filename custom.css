@@ -197,6 +197,10 @@ body {
   text-align: center;
 }
 
+.periods {
+  clear: both;
+}
+
 /*log in page css*/
 
 #loginPage,
