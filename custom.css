@@ -63,13 +63,24 @@ body {
 }
 
 #commentsection{
-  font-size: 30px
+  font-size: 30px;
+  float: none;
+}
+
+#commentButton{
+  text-align: center;
+  width: 100%;
+}
+
+.dropdown-menu{
+  width: 100%;
+  height:1000px;
+  overflow-x: scroll;
 }
 
 #APReview {
   position: relative;
-  width: 100%;
-  /*right: 100px;*/
+  /*width: 100%;*/
 }
 
 #concept {
