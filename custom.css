@@ -81,6 +81,7 @@ body {
 #APReview {
   position: relative;
   /*width: 100%;*/
+  font-family: 'Playfair Display', serif;
 }
 
 #concept {
@@ -190,6 +191,7 @@ body {
 }
 
 #timelineTitle {
+  font-family: 'Playfair Display', serif;
   font-size: 25px;
   text-align: center;
 }
