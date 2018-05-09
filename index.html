@@ -17,10 +17,11 @@
 
     <script>
         $(function() {
-            // $('#loginPage').hide()
-            //$('#intro-2').hide()
-            //$('#signUpPage').hide()
+            $('#loginPage').hide()
+            $('#intro-2').hide()
+            $('#signUpPage').hide()
             // $('#intro-1').hide()
+            $('#commentsection').hide()
 
             $('.periods').hide()
 
@@ -36,16 +37,22 @@
             $("#login").click(function() {
                 $('#loginPage').show()
                 $('#intro-1').hide()
+                $('#intro-2').show()
             });
 
-            $("#signUp").click(function() {
-                $('#signUpPage').show()
-                $('#intro-1').hide()
-                $('#intro-2').hide()
-            });
+            // $("#signUp").click(function() {
+            //     $('#signUpPage').show()
+            //     $('#intro-1').hide()
+            //     $('#intro-2').hide()
+            // });
 
             $("#APButton").click(function() {
                 $('#intro-2').show()
+            });
+
+            $("#logout").click(function() {
+                $('#login').show()
+                $('#commentsection').hide()
             });
         });
     </script>
@@ -58,14 +65,15 @@
             <a href='#APReview'><button type="button" id='APButton'>AP Review</button></a><br><br>
             <a href='#loginPage'><button type="button" class="logButton" id='login'>Login</button><br><br></a>
             <!--<a href='#signUpPage'><button type="button" class="logButton" id='signUp'>Sign Up</button></a>-->
+            <button id='logout'>Log Out</button>
         </div>
     </header>
 
-    <header id='intro-2'>
+    <header id='intro-2' class='container'>
         <div id='APReview'>
             <h3>AP US History Review</h3>
             <h4>Everything you need to know to ACE your AP exam.</h4>
-            <div id='timeline'>
+            <div id='timeline' class='container'>
                 <p id='timelineTitle'>Timeline</p>
                 <div class="vl"></div>
                 <div class='timelineimg' id='period1Image'>
@@ -204,6 +212,7 @@
                         </div>
                     </div>
                 </div>
+                <h1>Vocabulary</h1>
                 <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -1026,7 +1035,7 @@
                             <h4> Calfornios </h4>
                         </div>
                         <div class="panel-body">
-                        <p>Californios were Hispanic residents of California. Many were Spanish or Mexican because of California’s former rule by those countries.</p>
+                            <p>Californios were Hispanic residents of California. Many were Spanish or Mexican because of California’s former rule by those countries.</p>
                         </div>
                     </div>
                 </div>
@@ -1036,7 +1045,7 @@
                             <h4> Genizaros </h4>
                         </div>
                         <div class="panel-body">
-                        <p>Genizaros were Indians without tribes, and they had become part of Spanish society. They were considered to be at the bottom of the social classes.</p>
+                            <p>Genizaros were Indians without tribes, and they had become part of Spanish society. They were considered to be at the bottom of the social classes.</p>
                         </div>
                     </div>
                 </div>
@@ -1046,7 +1055,7 @@
                             <h4> Mestizos </h4>
                         </div>
                         <div class="panel-body">
-                        <p>Mestizos were people of mixed race.</p>
+                            <p>Mestizos were people of mixed race.</p>
                         </div>
                     </div>
                 </div>
@@ -1056,7 +1065,7 @@
                             <h4> Mulattoes </h4>
                         </div>
                         <div class="panel-body">
-                        <p>Mulattoes were people of mixed race.</p>
+                            <p>Mulattoes were people of mixed race.</p>
                         </div>
                     </div>
                 </div>
@@ -1066,7 +1075,7 @@
                             <h4> Chinatowns </h4>
                         </div>
                         <div class="panel-body">
-                        <p>Chinatowns developed in the west in which Chinese immigrants lived and worked in cities that would develop this name.</p>
+                            <p>Chinatowns developed in the west in which Chinese immigrants lived and worked in cities that would develop this name.</p>
                         </div>
                     </div>
                 </div>
@@ -1076,7 +1085,7 @@
                             <h4> Coolies </h4>
                         </div>
                         <div class="panel-body">
-                        <p>Coolies were Chinese laborers. Anti-Coolie Clubs were formed with the purpose of banning Chinese employment.</p>
+                            <p>Coolies were Chinese laborers. Anti-Coolie Clubs were formed with the purpose of banning Chinese employment.</p>
                         </div>
                     </div>
                 </div>
@@ -1096,7 +1105,8 @@
                             <h4> The Homestead Act </h4>
                         </div>
                         <div class="panel-body">
-                            <p>The Homestead Act was passed by Congress in 1862. It granted 160 acres of low cost land in return of the promise that people would live on the land and improve it for 5 years. This was not always beneficial because the land was sometimes dry and corporations would oftentimes commit fraud in order to gain land.</p>
+                            <p>The Homestead Act was passed by Congress in 1862. It granted 160 acres of low cost land in return of the promise that people would live on the land and improve it for 5 years. This was not always beneficial because the land
+                                was sometimes dry and corporations would oftentimes commit fraud in order to gain land.</p>
                         </div>
                     </div>
                 </div>
@@ -1106,7 +1116,7 @@
                             <h4> The Transcontinental Railroad </h4>
                         </div>
                         <div class="panel-body">
-                        <p>The Transcontinental Railroad was completed in 1869. This was when the railroad that began in the east and the railroad that began in the west met in Utah. It helped connect the east and west, which benefited the economy.</p>
+                            <p>The Transcontinental Railroad was completed in 1869. This was when the railroad that began in the east and the railroad that began in the west met in Utah. It helped connect the east and west, which benefited the economy.</p>
                         </div>
                     </div>
                 </div>
@@ -1136,7 +1146,8 @@
                             <h4> The Turner Thesis </h4>
                         </div>
                         <div class="panel-body">
-                            <p>The Turner Thesis stated that the frontier had a great impact on American history. Turner used the 1890 census data and argued that the frontier ended in 1890. He also posed the idea that the frontier gave America a unique identity and helped promote democracy.</p>
+                            <p>The Turner Thesis stated that the frontier had a great impact on American history. Turner used the 1890 census data and argued that the frontier ended in 1890. He also posed the idea that the frontier gave America a unique
+                                identity and helped promote democracy.</p>
                         </div>
                     </div>
                 </div>
@@ -1145,7 +1156,7 @@
                         <div class="panel-heading">
                             <h4> The Sand Creek Massacre </h4>
                         </div>
-                            <div class="panel-body">
+                        <div class="panel-body">
                             <p>The Sand Creek Massacre was a massacre of 133 Native Americans, 105 of which were women and children. Massacres of natives such as these often occurred during this time.</p>
                         </div>
                     </div>
@@ -1155,7 +1166,7 @@
                         <div class="panel-heading">
                             <h4> Little Bighorn </h4>
                         </div>
-                         <div class="panel-body">
+                        <div class="panel-body">
                             <p>Little Bighorn was a battle between Native Americans and George Custer in which all 264 members of his regiment was killed.</p>
                         </div>
                     </div>
@@ -1166,7 +1177,7 @@
                             <h4> George A. Custer </h4>
                         </div>
                         <div class="panel-body">
-                        <p>George A. Custer led a regiment of 264 men in the battle of Little Bighorn. During this battle, all soldiers in his army perished.</p>
+                            <p>George A. Custer led a regiment of 264 men in the battle of Little Bighorn. During this battle, all soldiers in his army perished.</p>
                         </div>
                     </div>
                 </div>
@@ -1176,8 +1187,8 @@
                             <h4> The Cowboy </h4>
                         </div>
                         <div class="panel-body">
-                        <p>
-                           The Cowboy was romanticized by a book called The Virginian. People began to fall in love with the idea of an individual who was tough and rugged and making a name for himself out west.</p>
+                            <p>
+                                The Cowboy was romanticized by a book called The Virginian. People began to fall in love with the idea of an individual who was tough and rugged and making a name for himself out west.</p>
                         </div>
                     </div>
                 </div>
@@ -1187,7 +1198,7 @@
                             <h4> The Ghost Dance </h4>
                         </div>
                         <div class="panel-body">
-                        <p>The Ghost Dance was a ritual performed by Native Americans that was believed to make buffalo return and lead to the whites leaving the natives alone. This scared many people and even made the government want to end the dance.</p>
+                            <p>The Ghost Dance was a ritual performed by Native Americans that was believed to make buffalo return and lead to the whites leaving the natives alone. This scared many people and even made the government want to end the dance.</p>
                         </div>
                     </div>
                 </div>
@@ -1197,7 +1208,7 @@
                             <h4> Wounded Knee </h4>
                         </div>
                         <div class="panel-body">
-                        <p>Wounded Knee occurred in 1890 in which there was fighting between soldiers and natives in South Dakota. 40 soldiers were killed and over 300 natives were killed, many of which were women and children.</p>
+                            <p>Wounded Knee occurred in 1890 in which there was fighting between soldiers and natives in South Dakota. 40 soldiers were killed and over 300 natives were killed, many of which were women and children.</p>
                         </div>
                     </div>
                 </div>
@@ -1207,8 +1218,9 @@
                             <h4> The Dawes Severalty Act </h4>
                         </div>
                         <div class="panel-body">
-                        <p>The Dawes Severalty Act was passed in 1887 that served the purpose of assimilating Native Americans into American culture and society. This was done so by eliminating tribal lands and providing 160 acres of land for individuals. SOme native children were also sent to boarding school. Another goal of the act was to promote Christianity.</p>
-                         </div>
+                            <p>The Dawes Severalty Act was passed in 1887 that served the purpose of assimilating Native Americans into American culture and society. This was done so by eliminating tribal lands and providing 160 acres of land for individuals.
+                                SOme native children were also sent to boarding school. Another goal of the act was to promote Christianity.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1287,15 +1299,27 @@
             </div>
         </div>
     </header>
-    <div id='commentsection'>
-        <div class="panel-heading"><span class='name'></span> :</div>
-        <input type="text" placeholder='type a comment...' id='comment' class="form-control" /><br><br>
-        <input type="submit" class="btn btn-info" value="Submit" id='commentSubmit'>
 
-        <div class="panel panel-default" id='newComment'>
-          <div class="panel-heading" id='username'></div>
-          <div class="panel-body" id='userComment'></div>
+    <div id='commentsection'>
+        <div class="dropdown">
+            <button id='commentButton' class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Comment Section
+    <span class="caret"></span></button>
+            <div class="dropdown-menu">
+                <div class='container'>
+                    <div class="panel-heading"><span class='name'></span> :</div>
+                    <input type="text" placeholder='type a comment...' id='comment' class="form-control" />
+                    <input type="submit" class="btn btn-info" value="Submit" id='commentSubmit'><br><br>
+                    <div class='commentRemove'><br>
+                        <div class="panel panel-default" id='newComment'>
+                            <div class="panel-heading" id='username'></div>
+                            <div class="panel-body" id='userComment'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
     <div id='loginPage'>
         <h1>Welcome to US History</h1>
         <br><br>
@@ -1303,7 +1327,7 @@
         <input type="text" name="Username" placeholder='Username' id='oldUser' class="form-control" /><br>
         <input type="text" name="Password" placeholder='Password' id='oldUserPass' class="form-control" /><br>
         <button id='signIn'>Sign In</button><br><br>
-        <button id='googlelogin'>Sign in with google</button>
+        <button id='googlelogin'>Sign in with google</button><br><br>
     </div>
 
     <!--<div id='signUpPage'>-->
@@ -1347,7 +1371,6 @@
         auth.onAuthStateChanged(newLogin);
     }
 
-    // var username
     function app(user) {
         var username = user.displayName
         console.log(username)
@@ -1368,17 +1391,26 @@
 
             writeCommentData(comment, username)
         });
-        
-        $('#commentsection').show()
     }
 
     $("#googlelogin").click(function() {
         login()
         $('.logButton').hide()
         $('#intro-1').show()
-        $('#loginPage').hide()
+        $('#commentsection').show()
+        // $('#loginPage').hide()
         $('#signUpPage').hide()
+        $('#loginPage').hide()
     });
+
+    $("#logout").click(function() {
+        firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+        }, function(error) {
+            // An error happened.
+        });
+    });
+
 
     function writeCommentData(comment, username) {
         firebase.database().ref('comment/').push().set({
@@ -1387,35 +1419,36 @@
         })
     }
 
-    
-    function appendComment(){
+
+    var count = 0
+
+    function appendComment() {
+        $('.commentRemove').empty()
         var query = firebase.database().ref('comment/').orderByKey();
-          query.once("value")
+        query.once("value")
             .then(function(snapshot) {
-              snapshot.forEach(function(childSnapshot) { 
-                var childData = childSnapshot.val();
-                var objects = Object.values(childData)
-                console.log(objects)
-                
-                $("#newComment:last").before("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>")
-                
-                $("#username").append(objects[1])
-                $("#userComment").append(objects[0])
+                snapshot.forEach(function(childSnapshot) {
+                    var childData = childSnapshot.val();
+                    var objects = Object.values(childData)
+                    console.log(objects)
+
+                    $('.commentRemove:last').prepend($("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>"));
+
+                    $("#username").append(objects[1])
+                    $("#userComment").append(objects[0])
+                });
             });
-          });
     }
-    
+
     $("#commentSubmit").click(function() {
-        $('#newComment').remove()
         appendComment()
-        });
-        
+    });
+
+    appendComment()
+
+    window.setInterval(function() {
         appendComment()
-          
-    // window.setInterval(function(){
-    //     $('#newComment').remove()
-    //     appendComment()
-    // }, 5000);
+    }, 5000);
 
     // function writeUserData(firstName, lastName, username, password, email) {
     //     firebase.database().ref('user/').push().set({

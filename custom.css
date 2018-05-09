@@ -28,6 +28,10 @@ body {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
   }
+
+  #commentsection {
+  font-size: 30px
+  }
 }
 
 @media (min-width: 992px) {
@@ -35,31 +39,52 @@ body {
     font-size: 30px;
     font-family: 'Playfair Display', serif;
   }
-  
-   #intro-1 h1 {
-  font-size: 50px;
-}
+
+  #intro-1 h1 {
+    font-size: 50px;
+  }
+
+  #commentsection {
+    font-size: 35px
+  }
 }
 
 @media (min-width: 1200px) {
   #intro-1 {
     font-family: 'Playfair Display', serif;
   }
-  
+
   #intro-1 h1 {
-  font-size: 70px;
-}
+    font-size: 70px;
+  }
+  #commentsection {
+    font-size: 45px
+  }
 }
 
+#commentsection{
+  font-size: 30px;
+  float: none;
+}
 
-#APReview{
-  position: relative;
+#commentButton{
+  text-align: center;
   width: 100%;
-  /*right: 100px;*/
+}
+
+.dropdown-menu{
+  width: 100%;
+  height:1000px;
+  overflow-x: scroll;
+}
+
+#APReview {
+  position: relative;
+  /*width: 100%;*/
 }
 
 #concept {
-   background-color: #dbdbdd;
+  background-color: #dbdbdd;
 }
 
 h2,
@@ -69,7 +94,8 @@ h5 {
   font-family: 'Playfair Display', serif;
 }
 
-li, p {
+li,
+p {
   font-family: 'Fauna One', serif
 }
 
@@ -77,7 +103,7 @@ button {
   transition-duration: 1.2s;
   background-color: white;
   border-radius: 10px;
-  border:none;
+  border: none;
 }
 
 .text-vertical-center {
@@ -89,7 +115,6 @@ button {
 
 .logButton {
   background-color: white;
-
 }
 
 .logButton:hover {
@@ -151,7 +176,7 @@ body {
   cursor: default;
 }
 
-#timeline img:hover + .centered{
+#timeline img:hover+.centered {
   display: inline-block;
 }
 
@@ -171,7 +196,8 @@ body {
 
 /*log in page css*/
 
-#loginPage, #signUpPage {
+#loginPage,
+#signUpPage {
   display: table;
   width: 100%;
   height: 100%;
@@ -180,7 +206,7 @@ body {
   text-align: center;
 }
 
-input[type=text]{
+input[type=text] {
   text-align: center;
   width: 500px;
   margin: 0 auto;
@@ -194,17 +220,25 @@ th {
   padding: 10px;
 }
 
-#comment{
+#comment {
   float: left;
   width: 100%;
   text-align: left;
 }
 
 /*.name{*/
+
 /*  text-decoration: underline;*/
+
 /*}*/
 
 #period5 table {
   font-size: 17px;
   font-family: 'Playfair Display', serif;
 }
+
+#logout {
+  color: blue;
+}
+
+#commentSection {}
