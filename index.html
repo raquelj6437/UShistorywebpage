@@ -61,7 +61,7 @@
 <body>
     <header id='intro-1'>
         <div id='heading' class="text-vertical-center">
-            <h1>Welcome <span class='name'></span> to US History</h1><br>
+            <h1 id='header'>Welcome <span class='name'></span> to US History</h1><br>
             <a href='#APReview'><button type="button" id='APButton'>AP Review</button></a><br><br>
             <a href='#loginPage'><button type="button" class="logButton" id='login'>Login</button><br><br></a>
             <!--<a href='#signUpPage'><button type="button" class="logButton" id='signUp'>Sign Up</button></a>-->
@@ -2341,22 +2341,16 @@
 
     function app(user) {
         var username = user.displayName
-        console.log(username)
         //user.displayName
         //user.email
         //user.photoURL
         //user.iud
-        alert(user.displayName + ' you are logged in!')
-        window.location.hash = '#intro-1';
 
         $(".name").text(user.displayName)
         // $("#image").attr("src",user.photoURL)
 
         $("#commentSubmit").click(function() {
             var comment = $("#comment").val();
-            console.log(comment)
-            console.log(username)
-
             writeCommentData(comment, username)
         });
     }
@@ -2370,6 +2364,8 @@
         $('#signUpPage').hide()
         $('#loginPage').hide()
         $('#intro-2').show()
+        alert(user.displayName + ' you are logged in!')
+        window.location.hash = '#intro-1';
     });
 
     $("#logout").click(function() {
@@ -2399,12 +2395,23 @@
                 snapshot.forEach(function(childSnapshot) {
                     var childData = childSnapshot.val();
                     var objects = Object.values(childData)
-                    console.log(objects)
+                    // console.log(objects)
 
                     $('.commentRemove:last').prepend($("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>"));
 
                     $("#username").append(objects[1])
                     $("#userComment").append(objects[0])
+                    
+                    var value = objects[0]
+                    var colors = [/red/,/green/,/purple/,/orange/,/yellow/,/turquiose/,/violet/,/blue/]
+                    
+                    for(var i=0;i<colors.length;i++){
+                          if(colors[i].test(value) == true){
+                            var word = String(colors[i])
+                            word = word.replace(/\//g, '');
+                            $('#userComment').css("color", word)
+                          }
+                        }
                 });
             });
     }
@@ -2418,7 +2425,7 @@
     window.setInterval(function() {
         appendComment()
     }, 5000);
-
+    
     // function writeUserData(firstName, lastName, username, password, email) {
     //     firebase.database().ref('user/').push().set({
     //         firstName: firstName,
