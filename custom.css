@@ -280,3 +280,12 @@ th {
 #logout {
   color: blue;
 }
+
+#APReview{
+  background: lightblue;
+}
+
+#APheader{
+  text-align: center;
+  text-decoration: underline;
+}
