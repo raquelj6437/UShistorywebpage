@@ -20,14 +20,14 @@ body {
 
 #header{
   text-align: center;
-  background: linear-gradient(to right, #0f0fff 20%, #3af8ff 40%, #0fcfff 60%, #0f7fff 80%);
+  background: linear-gradient(to right, #0061a3 20%, #4ea5e0 40%, #bbe0f9 60%, #0f7fff 80%);
   background-size: 200% auto;
   color: blue;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 1s linear infinite;
+  animation: shine 2s linear infinite;
 }
 
 @-webkit-keyframes shine {
@@ -222,6 +222,7 @@ body {
 
 .periods {
   clear: both;
+  text-align: center;
 }
 
 /*log in page css*/
@@ -281,7 +282,7 @@ th {
   color: blue;
 }
 
-#APReview{
+#intro-2{
   background: lightblue;
 }
 
