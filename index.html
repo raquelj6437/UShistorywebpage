@@ -17,43 +17,7 @@
 
     <script>
         $(function() {
-            $('#loginPage').hide()
-            $('#intro-2').hide()
-            $('#signUpPage').hide()
-            // $('#intro-1').hide()
-            $('#commentsection').hide()
 
-            $('.periods').hide()
-
-            $(".timelineimg").click(function() {
-                $('.periods').hide()
-                var value = $(this).attr('id')
-                value = value.replace('period', '')
-                value = value.replace('Image', '')
-                console.log(value)
-                $('#period' + value).show()
-            });
-
-            $("#login").click(function() {
-                $('#loginPage').show()
-                $('#intro-1').hide()
-                $('#intro-2').show()
-            });
-
-            // $("#signUp").click(function() {
-            //     $('#signUpPage').show()
-            //     $('#intro-1').hide()
-            //     $('#intro-2').hide()
-            // });
-
-            $("#APButton").click(function() {
-                $('#intro-2').show()
-            });
-
-            $("#logout").click(function() {
-                $('#login').show()
-                $('#commentsection').hide()
-            });
         });
     </script>
 </head>
@@ -439,17 +403,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="col-md-4">-->
-                    <!--    <div class="panel panel-default">-->
-                    <!--        <div class="panel-heading">-->
-                    <!--            <h4></h4>-->
-                    <!--        </div>-->
-                    <!--        <div class="panel-body">-->
-                    <!--            <p></p>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-
                 </div>
             </div>
 
@@ -2221,22 +2174,24 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>The NAACP</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>The NAACP, or the National Association for the Advancement of Colored People, helped challenged racial laws in the 20th century. They won the Guinn v. United States, which stated that the grandfather clause in Oklahoma was unconstitutional.</p>
-                            </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>The NAACP</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>The NAACP, or the National Association for the Advancement of Colored People, helped challenged racial laws in the 20th century. They won the Guinn v. United States, which stated that the grandfather clause in Oklahoma was
+                                unconstitutional.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4>Prohibition</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>Prohibition was the banning of alcohol. The reasons for this include drunkenness, spousal abuse, industrial inefficiency. Dry laws were passed in various states and this movement gained prominence prior to WWI. The 18th amendment was passed in 1919, which outlawed alcohol, but this was eventually overturned with the 21st amendment.</p>
+                        <div class="panel-body">
+                            <p>Prohibition was the banning of alcohol. The reasons for this include drunkenness, spousal abuse, industrial inefficiency. Dry laws were passed in various states and this movement gained prominence prior to WWI. The 18th amendment
+                                was passed in 1919, which outlawed alcohol, but this was eventually overturned with the 21st amendment.</p>
                         </div>
                     </div>
                 </div>
@@ -2245,7 +2200,7 @@
                         <div class="panel-heading">
                             <h4>The Women’s Christian Temperance Union (WCTU)</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Women’s Christian Temperance Union (WCTU) formed to help promote temperance and prohibition.</p>
                         </div>
                     </div>
@@ -2255,7 +2210,7 @@
                         <div class="panel-heading">
                             <h4>Eugenics</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Eugenics was the sterilization of certain individuals, meaning they could not reproduce. This was done to people with mental disabilities, criminals, etc</p>
                         </div>
                     </div>
@@ -2265,7 +2220,7 @@
                         <div class="panel-heading">
                             <h4>Eugene Debs</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Eugene Debs ran for president multiple times and was associated with socialism. He was one of the founding members of the Industrial Workers of the World.</p>
                         </div>
                     </div>
@@ -2275,8 +2230,9 @@
                         <div class="panel-heading">
                             <h4>The IWW</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>The IWW (“Wobblies”), or The Industrial Workers of the World, was a popular union that often went on strike. They were lead by William Haywood and advocated for a single union for all workers and abolition of the “wage slave” system.</p>
+                        <div class="panel-body">
+                            <p>The IWW (“Wobblies”), or The Industrial Workers of the World, was a popular union that often went on strike. They were lead by William Haywood and advocated for a single union for all workers and abolition of the “wage slave”
+                                system.</p>
                         </div>
                     </div>
                 </div>
@@ -2285,7 +2241,7 @@
                         <div class="panel-heading">
                             <h4>Good Trusts</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>“Good Trusts” were defined by their ability to control an entire industry while providing good service at reasonable rates. These were to be left alone.</p>
                         </div>
                     </div>
@@ -2295,7 +2251,7 @@
                         <div class="panel-heading">
                             <h4>The Pure Food and Drug Act</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Pure Food and Drug Act was passed during Theodore Roosevelt’s presidency. It created The Food and Drug Administration and required proper labels and restricted sale of certain medicines. This helped with consumer protection.</p>
                         </div>
                     </div>
@@ -2305,7 +2261,7 @@
                         <div class="panel-heading">
                             <h4>The Newlands Act</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Newlands Act was passed in 1902 by Theodore Roosevelt, and it stated that D.C. could use money from the sale of land for irrigation projects to help improve the land.</p>
                         </div>
                     </div>
@@ -2315,8 +2271,9 @@
                         <div class="panel-heading">
                             <h4>The Panic of 1907</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>The Panic of 1907 occurred and many people placed blame on President Roosevelt. To get out of this:,JP Morgan purchased a TN Coal and iron Company because the bank that owned it was in trouble. Roosevelt promised that he would not break up the company.</p>
+                        <div class="panel-body">
+                            <p>The Panic of 1907 occurred and many people placed blame on President Roosevelt. To get out of this:,JP Morgan purchased a TN Coal and iron Company because the bank that owned it was in trouble. Roosevelt promised that he would
+                                not break up the company.</p>
                         </div>
                     </div>
                 </div>
@@ -2325,7 +2282,7 @@
                         <div class="panel-heading">
                             <h4>Gifford Pincho</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Gifford Pinchot was head of the Forest Service under Theodore Roosevelt, but was later fired by William Howard Taft, which angered Roosevelt.</p>
                         </div>
                     </div>
@@ -2335,7 +2292,7 @@
                         <div class="panel-heading">
                             <h4>New Nationalism</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>New Nationalism was developed by Theodore Roosevelt, and it called for an increase in the power of the federal government. It also favored individual taxes, workers compensation, tariff reduction, etc.</p>
                         </div>
                     </div>
@@ -2345,7 +2302,7 @@
                         <div class="panel-heading">
                             <h4>The Roosevelt Corollary</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Roosevelt Corollary was an extension to the Monroe Doctrine. It stated that in future financial instances, the U.S. would intervene and pay off debts, making the U.S. take a prominent role in Latin America. </p>
                         </div>
                     </div>
@@ -2355,7 +2312,7 @@
                         <div class="panel-heading">
                             <h4>Dollar Diplomacy</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Dollar Diplomacy was when Wall Street bankers were encouraged to invest in areas of strategic concern of the U.S. This helped other countries while making money for U.S. businesses.</p>
                         </div>
                     </div>
@@ -2365,7 +2322,7 @@
                         <div class="panel-heading">
                             <h4>Pancho Villa</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Pancho Villa planned a rebellion in Mexico. Initially, Wilson supported him, but he later abandoned him which angered Villa. In response, Villa killed many Americans.</p>
                         </div>
                     </div>
@@ -2375,7 +2332,7 @@
                         <div class="panel-heading">
                             <h4>General John J. Pershin</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>General John J. Pershing was sent into Mexico by President Wilson to capture Villa, but he was ultimately unsuccessful.</p>
                         </div>
                     </div>
@@ -2385,7 +2342,7 @@
                         <div class="panel-heading">
                             <h4>The Triple Entente</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Triple Entente linked Britain, France, and Russia.</p>
                         </div>
                     </div>
@@ -2395,7 +2352,7 @@
                         <div class="panel-heading">
                             <h4>The Triple Alliance</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Triple Alliance united Germany, the Austro-Hungarian Empire, and Italy.The Central Powers was another name for the Triple Alliance.</p>
                         </div>
                     </div>
@@ -2405,7 +2362,7 @@
                         <div class="panel-heading">
                             <h4>The Lusitania</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Lusitania was an American ship that was sunk by the Germans on May 7,1915, killing 128 Americans. </p>
                         </div>
                     </div>
@@ -2415,8 +2372,9 @@
                         <div class="panel-heading">
                             <h4>The Zimmerman Telegram</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>The Zimmerman Telegram was a note from German to Mexico that urged Mexico to attack the U.S. This was done because Germany wanted to distract the U.S. from getting involved in the war. In return, Germany promised that Mexico would gain back the land from the U.S. that they had lost during the Mexican-American War.</p>
+                        <div class="panel-body">
+                            <p>The Zimmerman Telegram was a note from German to Mexico that urged Mexico to attack the U.S. This was done because Germany wanted to distract the U.S. from getting involved in the war. In return, Germany promised that Mexico
+                                would gain back the land from the U.S. that they had lost during the Mexican-American War.</p>
                         </div>
                     </div>
                 </div>
@@ -2425,7 +2383,7 @@
                         <div class="panel-heading">
                             <h4>The American Expeditionary Force</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The American Expeditionary Force, or the AEF, was comprised of 2 million men who volunteered and 3 million men who were drafted to fight in the war. </p>
                         </div>
                     </div>
@@ -2435,7 +2393,7 @@
                         <div class="panel-heading">
                             <h4>Trench Warfare</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Trench Warfare was a method of fighting in which the two sides would fight in trenches dug in the ground. The area between the trenches was known as “no-man’s land”.</p>
                         </div>
                     </div>
@@ -2445,8 +2403,9 @@
                         <div class="panel-heading">
                             <h4>The Ludlow Massacre</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>The Ludlow Massacre took place in Ludlow, Colorado in 1914. Workers walked out of coal mines owned by Rockefeller and they moved into tents after being evicted from company housing. State militia were sent to protect the mines, but they attacked the workers’ tent colony, killing 39 people.</p>
+                        <div class="panel-body">
+                            <p>The Ludlow Massacre took place in Ludlow, Colorado in 1914. Workers walked out of coal mines owned by Rockefeller and they moved into tents after being evicted from company housing. State militia were sent to protect the mines,
+                                but they attacked the workers’ tent colony, killing 39 people.</p>
                         </div>
                     </div>
                 </div>
@@ -2455,7 +2414,7 @@
                         <div class="panel-heading">
                             <h4>Great Migration</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>“Great Migration” was the mass movement of African Americans from the south to the industrial north.</p>
                         </div>
                     </div>
@@ -2465,7 +2424,7 @@
                         <div class="panel-heading">
                             <h4>The Fourteen Points</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Fourteen Points were Wilson’s plans for the post-war world. </p>
                         </div>
                     </div>
@@ -2475,7 +2434,7 @@
                         <div class="panel-heading">
                             <h4>The Treaty of Versailles</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Treaty of Versailles brought WWI to an end. It stated that Germany would have to pay reparations for damages to civilians and military pensions.</p>
                         </div>
                     </div>
@@ -2485,7 +2444,7 @@
                         <div class="panel-heading">
                             <h4>The League of Nations</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The League of Nations was an international organization that would oversee world affairs and prevent future wars.</p>
                         </div>
                     </div>
@@ -2495,7 +2454,7 @@
                         <div class="panel-heading">
                             <h4>Senator Henry Cabot Lod</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Senator Henry Cabot Lodge was against the treaty. He did everything in his power to obstruct, delay, or amend the treaty. He created a series of reservation, or amendments, that would limit American obligations to the League.</p>
                         </div>
                     </div>
@@ -2505,7 +2464,7 @@
                         <div class="panel-heading">
                             <h4>Marcus Garvey</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Marcus Garvey was an influential African American in the 1920s that promoted black nationalism and his organization, the United Negro Improvement Association (UNIA), encouraged movement back to Africa.</p>
                         </div>
                     </div>
@@ -2515,7 +2474,7 @@
                         <div class="panel-heading">
                             <h4>The Red Scare</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Red Scare was a crusade led by Attorney General A. Mitchell Palmer against suspected communists. Thousands of Americans were arrested and many were deported.</p>
                         </div>
                     </div>
@@ -2525,7 +2484,7 @@
                         <div class="panel-heading">
                             <h4>Palmer Raids</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Palmer Raids were a series of raids orchestrated by Attorney General A. Mitchell Palmer and J. Edgar Hoover. They were intended to uncover large caches of weapons and explosives, but only three pistols were found.</p>
                         </div>
                     </div>
@@ -2535,8 +2494,9 @@
                         <div class="panel-heading">
                             <h4>Nicola Sacco and Bartolomeo Vanzetti</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>Nicola Sacco and Bartolomeo Vanzetti were italian immigrants charged with the murder of a paymaster in Braintree, Massachusetts in May 1920. The evidence was questionable, but because of their background and the prejudiced jury, they were convicted and sentenced to death. As a result, there were widespread protests, but they were ultimately killed.</p>
+                        <div class="panel-body">
+                            <p>Nicola Sacco and Bartolomeo Vanzetti were italian immigrants charged with the murder of a paymaster in Braintree, Massachusetts in May 1920. The evidence was questionable, but because of their background and the prejudiced
+                                jury, they were convicted and sentenced to death. As a result, there were widespread protests, but they were ultimately killed.</p>
                         </div>
                     </div>
                 </div>
@@ -2545,7 +2505,7 @@
                         <div class="panel-heading">
                             <h4>The Nineteenth Amendment</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Nineteenth Amendment was passed on August 26, 1920, and it gave women the right to vote.</p>
                         </div>
                     </div>
@@ -2555,7 +2515,7 @@
                         <div class="panel-heading">
                             <h4>A. Philip Randolph</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>A. Philip Randolph was the leader of the union The Brotherhood of Sleeping Car Porters. He called for increased wages, shorter working hours, etc. He was also an influential civil leader. </p>
                         </div>
                     </div>
@@ -2565,7 +2525,7 @@
                         <div class="panel-heading">
                             <h4>Alain Locke</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Alain Locke assembled a notable collection of black writings in 1925 in The New Negro. It helped to make white publishers take interest in the writers.</p>
                         </div>
                     </div>
@@ -2575,7 +2535,7 @@
                         <div class="panel-heading">
                             <h4>Al Smith</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Al Smith was a democrat and a Roman Catholic that ran for president in 1928.</p>
                         </div>
                     </div>
@@ -2585,7 +2545,7 @@
                         <div class="panel-heading">
                             <h4>The American Plan</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The “American Plan” was what U.S. employers in the 1920s used to describe their policy of refusing to negotiate with unions.</p>
                         </div>
                     </div>
@@ -2595,8 +2555,9 @@
                         <div class="panel-heading">
                             <h4>The Automobile</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>The Automobile expanded people’s horizons by allowing them to venture away from their homes. It was a means of escaping farm life and quickly being able to reach others. People in cities found that automobiles could take them away from the chaos of the city. It also transformed people’s ideas of vacations and made them more accessible.</p>
+                        <div class="panel-body">
+                            <p>The Automobile expanded people’s horizons by allowing them to venture away from their homes. It was a means of escaping farm life and quickly being able to reach others. People in cities found that automobiles could take them
+                                away from the chaos of the city. It also transformed people’s ideas of vacations and made them more accessible.</p>
                         </div>
                     </div>
                 </div>
@@ -2605,7 +2566,7 @@
                         <div class="panel-heading">
                             <h4>Duke Ellington</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Duke Ellington was a jazz musician during the Harlem Renaissance.</p>
                         </div>
                     </div>
@@ -2615,7 +2576,7 @@
                         <div class="panel-heading">
                             <h4>H. L. Mencken</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>H. L. Mencken was a member of the Lost Generation. He wrote the magazines Smart Set and American Mercury. These criticized middle-class values.</p>
                         </div>
                     </div>
@@ -2625,7 +2586,7 @@
                         <div class="panel-heading">
                             <h4>The Harlem Renaissance</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Harlem Renaissance promoted African American culture through poetry, music such as jazz, literature, and art. It also focused on the discrimination they face.</p>
                         </div>
                     </div>
@@ -2635,7 +2596,7 @@
                         <div class="panel-heading">
                             <h4>Herbert Hoover</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Herbert Hoover was the 31st president of the U.S. He served during the Great Depression and promised to restore prosperity in the country.</p>
                         </div>
                     </div>
@@ -2645,7 +2606,7 @@
                         <div class="panel-heading">
                             <h4>Issei</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Issei were first generation Japanese immigrants.</p>
                         </div>
                     </div>
@@ -2655,7 +2616,7 @@
                         <div class="panel-heading">
                             <h4>Jelly Roll Morton</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Jelly Roll Morton was a jazz musician during the Harlem Renaissance.</p>
                         </div>
                     </div>
@@ -2665,8 +2626,9 @@
                         <div class="panel-heading">
                             <h4>The Ku Klux Klan</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>The Ku Klux Klan re-emerged in the 1920s and focused on anti-foreignism in addition to discrimination towards African Americans. The film The Birth of a Nation was released in 1915, and it glorified the KKK. 5 million Americans paid dues as members. Scandals helped lead to the decline of the group.</p>
+                        <div class="panel-body">
+                            <p>The Ku Klux Klan re-emerged in the 1920s and focused on anti-foreignism in addition to discrimination towards African Americans. The film The Birth of a Nation was released in 1915, and it glorified the KKK. 5 million Americans
+                                paid dues as members. Scandals helped lead to the decline of the group.</p>
                         </div>
                     </div>
                 </div>
@@ -2675,7 +2637,7 @@
                         <div class="panel-heading">
                             <h4>Langston Hughes</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Langston Hughes was a famous member of the Harlem Renaissance and summed up the movement in saying “I am a Negro- and beautiful”.</p>
                         </div>
                     </div>
@@ -2685,16 +2647,17 @@
                         <div class="panel-heading">
                             <h4>The Lost Generation</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Lost Generation was a group of writers that resented middle-class ideals and felt betrayed by society. Some examples are Ernest Hemingway and H.L. Mencken.</p>
                         </div>
                     </div>
-                </div><div class="col-md-4">
+                </div>
+                <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4>The National Origins Act of 1924</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The National Origins Act of 1924 strengthened the exclusionist provision of 1921. It banned immigration from east Asia entirely, which angered the Japanese. It also reduced the European quota from 3% to 2%.</p>
                         </div>
                     </div>
@@ -2704,7 +2667,7 @@
                         <div class="panel-heading">
                             <h4>Black Tuesday</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>“Black Tuesday” was the day the stock market crashed on October 29, 1929. It marked the beginning of the Great Depression.</p>
                         </div>
                     </div>
@@ -2714,7 +2677,7 @@
                         <div class="panel-heading">
                             <h4>The Agricultural Marketing Act</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Agricultural Marketing Act was a program created by Hoover that was meant to help farmers maintain prices.</p>
                         </div>
                     </div>
@@ -2724,7 +2687,7 @@
                         <div class="panel-heading">
                             <h4>Hoovervilles</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>Hoovervilles were places where people built houses out of cardboard, tin, etc. because they were homeless. They were named after President Herbert Hoover.</p>
                         </div>
                     </div>
@@ -2734,7 +2697,7 @@
                         <div class="panel-heading">
                             <h4>The Bonus Army</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Bonus Army was made up of WWI veterans that demanded their promised bonuses. They went to Washington D.C. in hope of receiving their bonuses, but were eventually broken up.</p>
                         </div>
                     </div>
@@ -2744,7 +2707,7 @@
                         <div class="panel-heading">
                             <h4>Bank Holiday</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>“Bank Holiday” was when FDR closed all banks for days to calm Americans’ fears.</p>
                         </div>
                     </div>
@@ -2754,7 +2717,7 @@
                         <div class="panel-heading">
                             <h4>The National Recovery Administration (NRA)</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The National Recovery Administration (NRA) set minimum wages and maximum hours to spread employment. This gave rights to labor unions.</p>
                         </div>
                     </div>
@@ -2764,7 +2727,7 @@
                         <div class="panel-heading">
                             <h4>The Social Security Act</h4>
                         </div>
-                        <div class="panel-body" >
+                        <div class="panel-body">
                             <p>The Social Security Act provided federal-state unemployment insurance and money for senior citizens, the disabled, etc. It was created by collecting a new payroll tax.</p>
                         </div>
                     </div>
@@ -2774,8 +2737,9 @@
                         <div class="panel-heading">
                             <h4>The Court-Packing Plan</h4>
                         </div>
-                        <div class="panel-body" >
-                            <p>The Court-Packing Plan was proposed by FDR because he wanted a court in favor of his programs. It proposed that a new supreme court judge could be added for every judge over 70. After this, the court began to rule more in favor of his programs.</p>
+                        <div class="panel-body">
+                            <p>The Court-Packing Plan was proposed by FDR because he wanted a court in favor of his programs. It proposed that a new supreme court judge could be added for every judge over 70. After this, the court began to rule more in favor
+                                of his programs.</p>
                         </div>
                     </div>
                 </div>
@@ -2796,7 +2760,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -3015,177 +2979,8 @@
     <!--</div>-->
 </body>
 
-
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyD2DtL08N6-HfYbUA42CgaB_selDghvkyo",
-        authDomain: "us-history-1524785849679.firebaseapp.com",
-        databaseURL: "https://us-history-1524785849679.firebaseio.com",
-        projectId: "us-history-1524785849679",
-        storageBucket: "us-history-1524785849679.appspot.com",
-        messagingSenderId: "746157019230"
-    };
-    firebase.initializeApp(config);
-</script>
 
-<script>
-    function login() {
-        function newLogin(user) {
-            if (user) {
-                app(user);
-            }
-            else {
-                var provider = new firebase.auth.GoogleAuthProvider();
-                firebase.auth().signInWithRedirect(provider);
-            }
-        }
-        var auth = firebase.auth();
-        auth.onAuthStateChanged(newLogin);
-    }
-
-    function app(user) {
-        var username = user.displayName
-        //user.displayName
-        //user.email
-        //user.photoURL
-        //user.iud
-
-        $(".name").text(user.displayName)
-        // $("#image").attr("src",user.photoURL)
-
-        $("#commentSubmit").click(function() {
-            var comment = $("#comment").val();
-            writeCommentData(comment, username)
-        });
-    }
-
-    $("#googlelogin").click(function() {
-        login()
-        $('.logButton').hide()
-        $('#intro-1').show()
-        $('#commentsection').show()
-        // $('#loginPage').hide()
-        $('#signUpPage').hide()
-        $('#loginPage').hide()
-        $('#intro-2').show()
-        alert(user.displayName + ' you are logged in!')
-        window.location.hash = '#intro-1';
-    });
-
-    $("#logout").click(function() {
-        firebase.auth().signOut().then(function() {
-            // Sign-out successful.
-        }, function(error) {
-            // An error happened.
-        });
-    });
-
-
-    function writeCommentData(comment, username) {
-        firebase.database().ref('comment/').push().set({
-            comment: comment,
-            username: username
-        })
-    }
-
-
-    var count = 0
-
-    function appendComment() {
-        $('.commentRemove').empty()
-        var query = firebase.database().ref('comment/').orderByKey();
-        query.once("value")
-            .then(function(snapshot) {
-                snapshot.forEach(function(childSnapshot) {
-                    var childData = childSnapshot.val();
-                    var objects = Object.values(childData)
-                    // console.log(objects)
-
-                    $('.commentRemove:last').prepend($("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>"));
-
-                    $("#username").append(objects[1])
-                    $("#userComment").append(objects[0])
-
-                    var value = objects[0]
-                    var colors = [/red/, /green/, /purple/, /orange/, /yellow/, /turquiose/, /violet/, /blue/]
-
-                    for (var i = 0; i < colors.length; i++) {
-                        if (colors[i].test(value) == true) {
-                            var word = String(colors[i])
-                            word = word.replace(/\//g, '');
-                            $('#userComment').css("color", word)
-                        }
-                    }
-                });
-            });
-    }
-
-    $("#commentSubmit").click(function() {
-        appendComment()
-    });
-
-    appendComment()
-
-    window.setInterval(function() {
-        appendComment()
-    }, 5000);
-
-    // function writeUserData(firstName, lastName, username, password, email) {
-    //     firebase.database().ref('user/').push().set({
-    //         firstName: firstName,
-    //         lastName: lastName,
-    //         username: username,
-    //         password: password,
-    //         email: email
-    //     })
-    // }
-
-    // $("#signUpButton").click(function() {
-    //     var firstName = $("#firstName").val();
-    //     var lastName = $("#lastName").val();
-    //     var username = $("#username").val();
-    //     var password = $("#password").val();
-    //     var email = $("#email").val();
-
-    //     if (firstName == !'' && lastName == !'' && username == !'' && password == !'' && email == !'') {
-    //         writeUserData(firstName, lastName, username, password, email)
-    //     }
-    //     else {
-    //         alert('please fill in everything')
-    //     }
-    // });
-
-
-    // $("#signIn").click(function() {
-    //     var userVal = $("#oldUser").val();
-    //     var userValPass = $("#oldUserPass").val();
-    //     var query = firebase.database().ref('user/').orderByKey();
-    //     query.once("value")
-    //         .then(function(snapshot) {
-    //             snapshot.forEach(function(childSnapshot) {
-    //                 var childData = childSnapshot.val();
-    //                 var objects = Object.values(childData)
-    //                 console.log(objects)
-
-    //                 var userVal = $("#oldUser").val();
-    //                 var userValPass = $("#oldUserPass").val();
-    //                 if (userVal == objects[4] && userValPass == objects[3]) {
-    //                     window.location.hash = '#intro-1';
-    //                     $('#intro-1').show()
-    //                     $('#loginPage').hide()
-    //                     $('.logButton').hide()
-    //                     userVal = $("#oldUser").val('');
-    //                     userValPass = $("#oldUserPass").val('');
-    //                     $("#wrongUserPass").text("");
-    //                 }
-    //                 else {
-    //                     $("#wrongUserPass").text("wrong username or password");
-    //                 }
-    //             });
-    //         });
-    // });
-</script>
+<script src="script.js"></script>
 
 </html>

@@ -162,6 +162,16 @@ body {
 
 /*timeline css*/
 
+/*.vl {*/
+/*  background-color: black;*/
+/*  width: 800px;*/
+/*  z-index: -.9;*/
+/*  height: 5px;*/
+/*  position: relative;*/
+/*  left: 55px;*/
+/*  top: 50px;*/
+/*}*/
+
 #timeline img {
   width: 120px;
   height: 120px;
@@ -256,12 +266,6 @@ th {
 #commentSubmit{
   width: 100%;
 }
-
-/*.name{*/
-
-/*  text-decoration: underline;*/
-
-/*}*/
 
 #period5 table {
   font-size: 17px;
