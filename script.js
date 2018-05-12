@@ -20,11 +20,11 @@ $("#login").click(function() {
     $('#intro-2').hide()
 });
 
-// $("#signUp").click(function() {
-//     $('#signUpPage').show()
-//     $('#intro-1').hide()
-//     $('#intro-2').hide()
-// });
+$("#signUp").click(function() {
+    $('#signUpPage').show()
+    $('#intro-1').hide()
+    $('#intro-2').hide()
+});
 
 $("#APButton").click(function() {
     $('#intro-2').show()
@@ -46,18 +46,18 @@ $("a").on('click', function(event) {
     }
   });
 
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyD2DtL08N6-HfYbUA42CgaB_selDghvkyo",
-    authDomain: "us-history-1524785849679.firebaseapp.com",
-    databaseURL: "https://us-history-1524785849679.firebaseio.com",
-    projectId: "us-history-1524785849679",
-    storageBucket: "us-history-1524785849679.appspot.com",
-    messagingSenderId: "746157019230"
-};
-firebase.initializeApp(config);
+$('#commentButton').click (function (e) {
+   setTimeout(function () {
+       window.location.href = "#commentCollapse"; //will redirect to your blog page (an ex: blog.html)
+    }, 500); //will call the function after 2 secs.
+});
 
 //google and firebase
+function commentData(comment, username){
+    var comment = $("#comment").val();
+    writeCommentData(comment, username)
+}
+
 function login() {
     function newLogin(user) {
         if (user) {
@@ -83,8 +83,7 @@ function app(user) {
     // $("#image").attr("src",user.photoURL)
 
     $("#commentSubmit").click(function() {
-        var comment = $("#comment").val();
-        writeCommentData(comment, username)
+        commentData(comment, username)
     });
 }
 
@@ -153,60 +152,66 @@ $("#commentSubmit").click(function() {
 
 appendComment()
 
-window.setInterval(function() {
-    appendComment()
-}, 5000);
+function writeUserData(firstName, lastName, username, password, email) {
+    firebase.database().ref('user/').push().set({
+        firstName: firstName,
+        lastName: lastName,
+        username: username,
+        password: password,
+        email: email
+    })
+}
 
-// function writeUserData(firstName, lastName, username, password, email) {
-//     firebase.database().ref('user/').push().set({
-//         firstName: firstName,
-//         lastName: lastName,
-//         username: username,
-//         password: password,
-//         email: email
-//     })
-// }
+$("#signUpButton").click(function() {
+    var firstName = $("#firstName").val();
+    var lastName = $("#lastName").val();
+    var username = $("#username1").val();
+    var password = $("#password").val();
+    var email = $("#email").val();
 
-// $("#signUpButton").click(function() {
-//     var firstName = $("#firstName").val();
-//     var lastName = $("#lastName").val();
-//     var username = $("#username").val();
-//     var password = $("#password").val();
-//     var email = $("#email").val();
+    if (firstName == !'' && lastName == !'' && username == !'' && password == !'' && email == !'') {
+        writeUserData(firstName, lastName, username, password, email)
+    }
+    else {
+        alert('please fill in everything')
+    }
+});
 
-//     if (firstName == !'' && lastName == !'' && username == !'' && password == !'' && email == !'') {
-//         writeUserData(firstName, lastName, username, password, email)
-//     }
-//     else {
-//         alert('please fill in everything')
-//     }
-// });
+var name = ''
 
+$("#signIn").click(function() {
+    console.log('hi')
+    var userVal = $("#oldUser").val();
+    var userValPass = $("#oldUserPass").val();
+    var query = firebase.database().ref('user/').orderByKey();
+    query.once("value")
+        .then(function(snapshot) {
+            snapshot.forEach(function(childSnapshot) {
+                var childData = childSnapshot.val();
+                console.log(childData.firstName)
 
-// $("#signIn").click(function() {
-//     var userVal = $("#oldUser").val();
-//     var userValPass = $("#oldUserPass").val();
-//     var query = firebase.database().ref('user/').orderByKey();
-//     query.once("value")
-//         .then(function(snapshot) {
-//             snapshot.forEach(function(childSnapshot) {
-//                 var childData = childSnapshot.val();
-//                 var objects = Object.values(childData)
+                var userVal = $("#oldUser").val();
+                var userValPass = $("#oldUserPass").val();
+                if (userVal == childData.username && userValPass == childData.password) {
+                    window.location.hash = '#intro-1';
+                    $('#intro-1').show()
+                    $('#intro-2').show()
+                    $('#loginPage').hide()
+                    $('.logButton').hide()
+                    $('#commentsection').show()
+                    userVal = $("#oldUser").val('');
+                    userValPass = $("#oldUserPass").val('');
+                    $("#wrongUserPass").text("");
+                    name = childData.firstName + ' ' + childData.lastName
+                    $(".name").text(name)
+                }
+                else {
+                    $("#wrongUserPass").text("wrong username or password");
+                }
+            });
+        });
+});
 
-//                 var userVal = $("#oldUser").val();
-//                 var userValPass = $("#oldUserPass").val();
-//                 if (userVal == objects[4] && userValPass == objects[3]) {
-//                     window.location.hash = '#intro-1';
-//                     $('#intro-1').show()
-//                     $('#loginPage').hide()
-//                     $('.logButton').hide()
-//                     userVal = $("#oldUser").val('');
-//                     userValPass = $("#oldUserPass").val('');
-//                     $("#wrongUserPass").text("");
-//                 }
-//                 else {
-//                     $("#wrongUserPass").text("wrong username or password");
-//                 }
-//             });
-//         });
-// });
+$("#commentSubmit").click(function() {
+    commentData(comment, name)
+});

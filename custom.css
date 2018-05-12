@@ -98,12 +98,12 @@ body {
   width: 100%;
 }
 
-.dropdown-menu{
-  width: 100%;
-  height:500px;
-  overflow-x: scroll;
-  background-color: black;
-}
+/*#commentsection{*/
+/*  width: 100%;*/
+/*  height:500px;*/
+/*  overflow-x: scroll;*/
+/*  background-color: black;*/
+/*}*/
 
 #APReview {
   position: relative;
@@ -291,3 +291,8 @@ th {
   text-align: center;
   text-decoration: underline;
 }
+
+/*#commentsection{*/
+/*  position: fixed;*/
+/*  bottom: -450px;*/
+/*}*/
