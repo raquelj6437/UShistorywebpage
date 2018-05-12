@@ -11,14 +11,13 @@ $(".timelineimg").click(function() {
     var value = $(this).attr('id')
     value = value.replace('period', '')
     value = value.replace('Image', '')
-    console.log(value)
     $('#period' + value).show()
 });
 
 $("#login").click(function() {
     $('#loginPage').show()
     $('#intro-1').hide()
-    $('#intro-2').show()
+    $('#intro-2').hide()
 });
 
 // $("#signUp").click(function() {
@@ -35,6 +34,17 @@ $("#logout").click(function() {
     $('#login').show()
     $('#commentsection').hide()
 });
+
+$("a").on('click', function(event) {
+    if (this.hash !== "") {
+     var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
 
 // Initialize Firebase
 var config = {
@@ -118,8 +128,6 @@ function appendComment() {
             snapshot.forEach(function(childSnapshot) {
                 var childData = childSnapshot.val();
                 var objects = Object.values(childData)
-                // console.log(objects)
-
                 $('.commentRemove:last').prepend($("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>"));
 
                 $("#username").append(objects[1])
@@ -184,7 +192,6 @@ window.setInterval(function() {
 //             snapshot.forEach(function(childSnapshot) {
 //                 var childData = childSnapshot.val();
 //                 var objects = Object.values(childData)
-//                 console.log(objects)
 
 //                 var userVal = $("#oldUser").val();
 //                 var userValPass = $("#oldUserPass").val();
