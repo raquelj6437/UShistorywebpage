@@ -1,8 +1,8 @@
 $('#loginPage').hide()
 $('#intro-2').hide()
 $('#signUpPage').hide()
-// $('#intro-1').hide()
-$('#commentsection').hide()
+$('#intro-1').hide()
+// $('#commentsection').hide()
 
 $('.periods').hide()
 
@@ -127,7 +127,7 @@ function appendComment() {
             snapshot.forEach(function(childSnapshot) {
                 var childData = childSnapshot.val();
                 var objects = Object.values(childData)
-                $('.commentRemove:last').prepend($("<div class='panel panel-default' id='newComment'><div class='panel-heading' id='username'></div><div class='panel-body' id='userComment'></div></div>"));
+                $('.commentRemove:last').prepend($("<div class='card' id='newComment'> <div class='card-header'><span id='username'></span></div> <div class='card-text' id='userComment'></div><button id='replyButton'>reply</button></div><br>"));
 
                 $("#username").append(objects[1])
                 $("#userComment").append(objects[0])

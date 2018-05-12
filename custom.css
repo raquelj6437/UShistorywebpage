@@ -51,10 +51,6 @@ body {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
   }
-
-  #commentsection {
-  font-size: 30px
-  }
 }
 
 @media (min-width: 992px) {
@@ -65,10 +61,6 @@ body {
 
   #intro-1 h1 {
     font-size: 50px;
-  }
-
-  #commentsection {
-    font-size: 35px
   }
 }
 
@@ -83,14 +75,6 @@ body {
    #intro-1 h2{
     font-size: 70px;
   }
-  #commentsection {
-    font-size: 45px
-  }
-}
-
-#commentsection{
-  font-size: 30px;
-  float: none;
 }
 
 #commentButton{
@@ -266,10 +250,6 @@ th {
   background-color: black;
 }
 
-#username{
-  background-color: lightblue;
-}
-
 #commentSubmit{
   width: 100%;
 }
@@ -296,3 +276,29 @@ th {
 /*  position: fixed;*/
 /*  bottom: -450px;*/
 /*}*/
+
+.panel-body{
+  justify-content: flex-end;
+}
+
+.card{
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding-bottom: 20px;
+}
+
+#username{
+  font-size: 25px;
+  position: relative;
+  left: 20px;
+}
+
+.card-header{
+  background-color: lightblue;
+  position: relative;
+  z-index: -1;
+  padding-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
