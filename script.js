@@ -1,7 +1,7 @@
 $('#loginPage').hide()
-// $('#intro-2').hide()
+$('#intro-2').hide()
 $('#signUpPage').hide()
-$('#intro-1').hide()
+// $('#intro-1').hide()
 $('#commentsection').hide()
 
 $('.periods').hide()
@@ -236,4 +236,6 @@ function checkSize(){
 checkSize()
 $(window).resize(checkSize);
 
-// window.setInterval(checkSize, 1000);
+$("#timelineTitle").click(function() {
+    $("html, body").animate({ scrollTop: document.body.scrollHeight }, "slow");
+});
