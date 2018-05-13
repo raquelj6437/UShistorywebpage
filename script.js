@@ -3,9 +3,9 @@ $('#intro-2').hide()
 $('#signUpPage').hide()
 // $('#intro-1').hide()
 $('#commentsection').hide()
-$('.spacer').hide()
+$('.space').hide()
 $('.periods').css('display','none')
-$('#period1').css('display','block')
+// $('#period1').css('display','block')
 
 $(document).on('click', '#timeline .timelineimg', function(){ 
      $('.periods').css('display','none')
@@ -13,6 +13,7 @@ $(document).on('click', '#timeline .timelineimg', function(){
     value = value.replace('period', '')
     value = value.replace('Image', '')
     $('#period' + value).css('display','block')
+    $('.space').hide()
 });
 
 $("#login").click(function() {
@@ -29,6 +30,9 @@ $("#signUp").click(function() {
 
 $("#APButton").click(function() {
     $('#intro-2').show()
+    if ($('.periods').css('display')=='none'){
+        $('.space').show()
+    }
 });
 
 $("#logout").click(function() {
