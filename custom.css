@@ -18,7 +18,7 @@ body {
   color: white;
 }
 
-#header{
+#header {
   text-align: center;
   background: linear-gradient(to right, #0061a3 20%, #4ea5e0 40%, #bbe0f9 60%, #0f7fff 80%);
   background-size: 200% auto;
@@ -31,16 +31,16 @@ body {
 }
 
 @-webkit-keyframes shine {
-    to {
-      background-position: 200% center;
-    }
+  to {
+    background-position: 200% center;
   }
-  
+}
+
 @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
+  to {
+    background-position: 200% center;
   }
+}
 
 #intro-1 h1 {
   font-family: 'Playfair Display', serif;
@@ -51,12 +51,36 @@ body {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
   }
-  .panel{
+  .panel {
     height: auto;
   }
+
+  #APheader h3 {
+    font-size: 30px;
+  }
+
+  #APheader h4 {
+    font-size: 15px;
+  }
+
+  #timeline img {
+    display: none;
+  }
+
+  .centered {
+    visibility: visible;
+    color: black;
+    font-size: 20px;
+  }
   
-  .vocabName{
-  padding-top: 100px;
+  .vocabName {
+    padding-top: 100px;
+  }
+}
+
+@media(max-width: 1199.9px){
+  .vocabName {
+    padding-top: 100px;
   }
 }
 
@@ -69,17 +93,21 @@ body {
   #intro-1 h1 {
     font-size: 50px;
   }
-  
-  .panel{
+
+  .panel {
     height: 350px;
   }
-  
-  #concept{
+
+  #concept {
     height: 288px
   }
-  
-  .vocabName{
-    padding-top: 460px;
+
+  #APheader h3 {
+    font-size: 50px;
+  }
+
+  #APheader h4 {
+    font-size: 25px;
   }
 }
 
@@ -91,26 +119,70 @@ body {
   #intro-1 h1 {
     font-size: 70px;
   }
-   #intro-1 h2{
+  #intro-1 h2 {
     font-size: 70px;
+  }
+
+  #timeline img {
+    display: block;
+  }
+
+  .centered {
+    transition: opacity .2s, visibility .2s;
+    bottom: 95px;
+    filter: brightness(100%);
+    color: white;
+    opacity: 0;
+    font-size: 15px;
+  }
+
+  .timelineimg:hover .centered {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .timelineimg {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+
+#timeline {
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+  display: table;
+  margin: auto;
+  width: 90%;
+}
+
+  .vocabName {
+    padding-top: 460px;
   }
 }
 
-#commentButton{
+#commentButton {
   text-align: center;
   width: 100%;
 }
 
-/*#commentsection{*/
-/*  width: 100%;*/
-/*  height:500px;*/
-/*  overflow-x: scroll;*/
-/*  background-color: black;*/
-/*}*/
+#commentsection{
+
+  width: 100%;
+
+  height:500px;
+
+  overflow-x: scroll;
+
+  background-color: black;
+
+}
 
 #APReview {
   position: relative;
-  /*width: 100%;*/
+  width: 100%;
   font-family: 'Playfair Display', serif;
 }
 
@@ -166,63 +238,42 @@ body {
   margin: 0 auto;
 }
 
-/*timeline css*/
+timeline css
 
-/*.vl {*/
-/*  background-color: black;*/
-/*  width: 800px;*/
-/*  z-index: -.9;*/
-/*  height: 5px;*/
-/*  position: relative;*/
-/*  left: 55px;*/
-/*  top: 50px;*/
-/*}*/
+.vl {
+
+  background-color: black;
+
+  width: 800px;
+
+  z-index: -.9;
+
+  height: 5px;
+
+  position: relative;
+
+  left: 55px;
+
+  top: 50px;
+
+}
 
 #timeline img {
   width: 120px;
   height: 120px;
-  display: block;
   padding: 5px;
   position: relative;
   bottom: 10px;
 }
 
-.timelineimg:hover img{
+.timelineimg:hover img {
   filter: brightness(50%);
-}
-
-.timelineimg {
-  width: 120px;
-  height: 120px;
-  text-align: center;
-  float: left;
-  position: relative;
 }
 
 .centered {
   position: relative;
-  bottom: 75px;
-  color: white;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  bottom: 95px;
-  filter: brightness(100%);
 }
 
-.timelineimg:hover .centered {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-#timeline {
-  width: 100%;
-  height: 200px;
-  display: relative;
-  z-index: -1;
-  margin: auto;
-}
 
 #timelineTitle {
   font-family: 'Playfair Display', serif;
@@ -235,7 +286,7 @@ body {
   text-align: center;
 }
 
-/*log in page css*/
+log in page css
 
 #loginPage,
 #signUpPage {
@@ -262,14 +313,14 @@ th {
 }
 
 #comment {
-  /*float: left;*/
+  float: left;
   width: 100%;
   text-align: left;
   color: white;
   background-color: black;
 }
 
-#commentSubmit{
+#commentSubmit {
   width: 100%;
 }
 
@@ -282,37 +333,40 @@ th {
   color: blue;
 }
 
-#intro-2{
+#intro-2 {
   background: #d4e9f7;
 }
 
-#APheader{
+#APheader {
   text-align: center;
   text-decoration: underline;
 }
 
-/*#commentsection{*/
-/*  position: fixed;*/
-/*  bottom: -450px;*/
-/*}*/
+#commentsection{
 
-.panel-body{
+  position: fixed;
+
+  bottom: -450px;
+
+}
+
+.panel-body {
   justify-content: flex-end;
 }
 
-.card{
+.card {
   border-radius: 25px;
   border: 2px solid #73AD21;
   padding-bottom: 20px;
 }
 
-#username{
+#username {
   font-size: 25px;
   position: relative;
   left: 20px;
 }
 
-.card-header{
+.card-header {
   background-color: lightblue;
   position: relative;
   z-index: -1;
