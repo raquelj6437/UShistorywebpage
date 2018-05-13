@@ -3,7 +3,7 @@ $('#intro-2').hide()
 $('#signUpPage').hide()
 // $('#intro-1').hide()
 $('#commentsection').hide()
-
+$('.spacer').hide()
 $('.periods').css('display','none')
 
 $(document).on('click', '#timeline .timelineimg', function(){ 
@@ -103,6 +103,7 @@ $("#googlelogin").click(function() {
     $('#signUpPage').hide()
     $('#loginPage').hide()
     $('#intro-2').show()
+    $('.spacer').show()
     alert(user.displayName + ' you are logged in!')
     window.location.hash = '#intro-1';
 });
@@ -206,6 +207,7 @@ $("#signIn").click(function() {
                     $('#loginPage').hide()
                     $('.logButton').hide()
                     $('#commentsection').show()
+                    $('.spacer').show()
                     userVal = $("#oldUser").val('');
                     userValPass = $("#oldUserPass").val('');
                     $("#wrongUserPass").text("");
@@ -229,15 +231,9 @@ function checkSize(){
         $("#timeline").html("<p id='timelineTitle'>Timeline</p> <div class='vl'></div><a href='#period1'><div class='timelineimg' id='period1Image'><img src='images/timeline/period1.jpg' alt='Period 1' class='img-circle'><p class='centered'><u>Period 1</u> <br>(1491 – 1607)</p></div></a><a href='#period2'><div class='timelineimg' id='period2Image'><img src='images/timeline/period2.jpg' alt='Period 2' class='img-circle'><p class='centered'><u>Period 2 </u><br> (1607-1754)</p></div></a><a href='#period3'><div class='timelineimg' id='period3Image'><img src='images/timeline/period3.jpg' alt='Period 3' class='img-circle'><p class='centered'><u>Period 3</u> <br> (1754-1800)</p></div></a><a href='#period4'><div class='timelineimg' id='period4Image'><img src='images/timeline/period4.jpg' alt='Period 4' class='img-circle'><p class='centered'><u>Period 4 </u><br> (1800-1848)</p></div></a><a href='#period5'><div class='timelineimg' id='period5Image'><img src='images/timeline/period5.jpg' alt='Period 5' class='img-circle'><p class='centered'><u>Period 5 </u><br>(1844-1877)</p></div></a><a href='#period6'><div class='timelineimg' id='period6Image'><img src='images/timeline/period6.jpg' alt='Period 6' class='img-circle'><p class='centered'><u>Period 6 </u><br>(1865-1898) </p></div></a><a href='#period7'><div class='timelineimg' id='period7Image'><img src='images/timeline/period7.jpg' alt='Period 7' class='img-circle'><p class='centered'><u>Period 7 </u><br>(1890–1945) </p></div></a><a href='#period8'><div class='timelineimg' id='period8Image'><img src='images/timeline/period8.jpg' alt='Period 8' class='img-circle'><p class='centered'><u>Period 8</u> <br> (1945-1980) </p></div></a>")
     }
     else if ($(".vocabName").css("padding-top") == "100px" ){
-        $("#timeline").html("<div><div class='dropdown'><button type='button' id='timelineTitle' class='btn btn-primary dropdown-toggle' data-toggle='dropdown' style='width:100%'>Timeline</button><div class='dropdown-menu' style='width:100%; text-align:center;'><div class='dropdown-item'><a href='#period1'><div class='timelineimg' id='period1Image'><p class='centered'><u>Period 1</u> (1491 – 1607)</p></div></a></div><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period2'><div class='timelineimg' id='period2Image'><p class='centered'><u>Period 2 </u> (1607-1754)</p></div></a></div><div class='dropdown-divider'></div><dvi class='dropdown-item'><a href='#period3'><div class='timelineimg' id='period3Image'><p class='centered'><u>Period 3</u> (1754-1800)</p></div></a></dvi><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period4'><div class='timelineimg' id='period4Image'><p class='centered'><u>Period 4 </u> (1800-1848)</p></div></a></div><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period5'><div class='timelineimg' id='period5Image'><p class='centered'><u>Period 5 </u> (1844-1877)</p></div></a></div><div class='dropdown-divider'></div><dvi class='dropdown-item'><a href='#period6'><div class='timelineimg' id='period6Image'><p class='centered'><u>Period 6 </u> (1865-1898) </p></div></a></dvi><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period7'><div class='timelineimg' id='period7Image'><p class='centered'><u>Period 7 </u> 1890–1945) </p></div></a></div><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period8'><div class='timelineimg' id='period8Image'><p class='centered'><u>Period 8</u> (1945-1980) </p></div></a></div></div></div></div>")
+        $("#timeline").html("<div><div class='dropdown'><button type='button' id='timelineTitle' class='btn btn-primary dropdown-toggle' data-toggle='dropdown' style='width:100%'>Timeline</button><div class='dropdown-menu' style='width:100%; text-align:center;'><div class='dropdown-item'><a href='#period1'><div class='timelineimg' id='period1Image'><p class='centered'>   Period 1     (1491 – 1607)</p></div></a></div><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period2'><div class='timelineimg' id='period2Image'><p class='centered'>   Period 2      (1607-1754)</p></div></a></div><div class='dropdown-divider'></div><dvi class='dropdown-item'><a href='#period3'><div class='timelineimg' id='period3Image'><p class='centered'>   Period 3     (1754-1800)</p></div></a></dvi><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period4'><div class='timelineimg' id='period4Image'><p class='centered'>   Period 4      (1800-1848)</p></div></a></div><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period5'><div class='timelineimg' id='period5Image'><p class='centered'>   Period 5      (1844-1877)</p></div></a></div><div class='dropdown-divider'></div><dvi class='dropdown-item'><a href='#period6'><div class='timelineimg' id='period6Image'><p class='centered'>   Period 6      (1865-1898) </p></div></a></dvi><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period7'><div class='timelineimg' id='period7Image'><p class='centered'>   Period 7      1890–1945) </p></div></a></div><div class='dropdown-divider'></div><div class='dropdown-item'><a href='#period8'><div class='timelineimg' id='period8Image'><p class='centered'>   Period 8     (1945-1980) </p></div></a></div></div></div></div>")
     }
 }
 
 checkSize()
 $(window).resize(checkSize);
-
-$("#timelineTitle").click(function() {
-    if($('.periods').css('display') == 'none'){
-        $("html, body").animate({ scrollTop: document.body.scrollHeight }, "slow");
-    }
-});
