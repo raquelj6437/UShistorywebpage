@@ -5,6 +5,7 @@ $('#signUpPage').hide()
 $('#commentsection').hide()
 $('.spacer').hide()
 $('.periods').css('display','none')
+$('#period1').css('display','block')
 
 $(document).on('click', '#timeline .timelineimg', function(){ 
      $('.periods').css('display','none')
