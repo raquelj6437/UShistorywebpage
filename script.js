@@ -35,15 +35,22 @@ $("#logout").click(function() {
     $('#commentsection').hide()
 });
 
+$(document).on('click', 'a', function(e) {
+    e.preventDefault();                   // prevent default anchor behavior
+    setTimeout(function(){
+
+    },500);       
+}); 
+
 $(document).on('click', 'a', function(){
-    if (this.hash !== "") {
-     var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
+        if (this.hash !== "") {
+         var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
   });
 
 $('#commentButton').click (function () {
