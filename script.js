@@ -4,14 +4,14 @@ $('#signUpPage').hide()
 // $('#intro-1').hide()
 $('#commentsection').hide()
 
-$('.periods').hide()
+$('.periods').css('display','none')
 
 $(document).on('click', '#timeline .timelineimg', function(){ 
-     $('.periods').hide()
+     $('.periods').css('display','none')
     var value = $(this).attr('id')
     value = value.replace('period', '')
     value = value.replace('Image', '')
-    $('#period' + value).show()
+    $('#period' + value).css('display','block')
 });
 
 $("#login").click(function() {
@@ -237,5 +237,7 @@ checkSize()
 $(window).resize(checkSize);
 
 $("#timelineTitle").click(function() {
-    $("html, body").animate({ scrollTop: document.body.scrollHeight }, "slow");
+    if($('.periods').css('display') == 'none'){
+        $("html, body").animate({ scrollTop: document.body.scrollHeight }, "slow");
+    }
 });
