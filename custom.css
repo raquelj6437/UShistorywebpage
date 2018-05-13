@@ -46,13 +46,17 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 200px) {
   #intro-1 {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
   }
   .panel{
     height: auto;
+  }
+  
+  .vocabName{
+  padding-top: 100px;
   }
 }
 
@@ -72,6 +76,10 @@ body {
   
   #concept{
     height: 288px
+  }
+  
+  .vocabName{
+    padding-top: 460px;
   }
 }
 
