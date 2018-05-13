@@ -51,6 +51,9 @@ body {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
   }
+  .panel{
+    height: auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -61,6 +64,14 @@ body {
 
   #intro-1 h1 {
     font-size: 50px;
+  }
+  
+  .panel{
+    height: 350px;
+  }
+  
+  #concept{
+    height: 288px
   }
 }
 

@@ -1,8 +1,8 @@
 $('#loginPage').hide()
-$('#intro-2').hide()
+// $('#intro-2').hide()
 $('#signUpPage').hide()
 $('#intro-1').hide()
-// $('#commentsection').hide()
+$('#commentsection').hide()
 
 $('.periods').hide()
 
