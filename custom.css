@@ -337,6 +337,7 @@ th {
   border-radius: 25px;
   border: 2px solid #73AD21;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #username {
@@ -361,7 +362,24 @@ th {
   background: #d4e9f7;
 }
 
-/*.fixedComment{*/
-/*  position: fixed;*/
-/*  bottom: -465px;*/
-/*}*/
+#userComment{
+  position: relative;
+  left: 10px;
+  font-size: 20px;
+}
+
+#replyButton{
+  position: relative;
+  left: 80%;
+  background-color: lightgrey
+}
+
+#replySection{
+  position: relative;
+  left: 70px;
+  width: 500px;
+}
+
+#replySubmit{
+  width: 100%
+}
