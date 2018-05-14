@@ -181,12 +181,12 @@ $("#signUpButton").click(function() {
     var password = $("#password").val();
     var email = $("#email").val();
 
-    if (firstName == !'' && lastName == !'' && username == !'' && password == !'' && email == !'') {
+//     if (firstName == !'' && lastName == !'' && username == !'' && password == !'' && email == !'') {
         writeUserData(firstName, lastName, username, password, email)
-    }
-    else {
-        alert('please fill in everything')
-    }
+//     }
+//     else {
+//         alert('please fill in everything')
+//     }
 });
 
 var name = ''
