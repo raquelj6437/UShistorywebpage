@@ -187,6 +187,8 @@ $("#signUpButton").click(function() {
 //     else {
 //         alert('please fill in everything')
 //     }
+     $('#loginPage').show()
+     $('#signUpPage').hide()
 });
 
 var name = ''
