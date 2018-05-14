@@ -160,6 +160,7 @@ $("#commentSubmit").click(function() {
     setTimeout(function () {
        window.location.href = "#commentCollapse"; //will redirect to your blog page (an ex: blog.html)
     }, 200); //will call the function after 2 secs.
+    $("#comment").val("")
 });
 
 appendComment()
