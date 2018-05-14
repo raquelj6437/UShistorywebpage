@@ -36,11 +36,6 @@ $("#APButton").click(function() {
     }
 });
 
-$("#logout").click(function() {
-    $('#login').show()
-    $('#commentsection').hide()
-});
-
 $(document).on('click', 'a', function(e) {
     e.preventDefault();                   // prevent default anchor behavior
     setTimeout(function(){
@@ -252,3 +247,7 @@ $(window).resize(checkSize);
 //     console.log('1')
 //     e.attr('id', 'myid');
 // });
+
+$('#logout').click(function() {
+    location.reload();
+});
